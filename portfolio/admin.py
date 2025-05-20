@@ -1,7 +1,7 @@
 #File : portfolio/admin.py
 
 from django.contrib import admin
-from .models import User, Skill, Project, Service, Contact, Education, Experience, Achievement, Classification, ProjectCategory
+from .models import User, Skill, Project, Service, Contact, Education, Experience, Achievement, Certification, ProjectCategory
 
 
 # Register your models here.
@@ -109,14 +109,13 @@ class EducationAdmin(admin.ModelAdmin):
     readonly_fields = ('duration',)
     fieldsets = (
         (None, {
-            'fields': ('user_id', 'degree', 'institution', 'department')
+            'fields': ('user_id', 'degree', 'institution', 'institution_logo', 'department', 'department_logo')
         }),
         ('Timeline', {
             'fields': ('start_date', 'end_date', 'duration')
         }),
         ('Grades', {
-            'fields': ('grade', 'grade_standard'),
-            'classes': ('collapse',)
+            'fields': ('grade', 'grade_standard')
         }),
     )
 
@@ -134,8 +133,7 @@ class ExperienceAdmin(admin.ModelAdmin):
             'fields': ('user_id', 'name', 'institution')
         }),
         ('Details', {
-            'fields': ('description',),
-            'classes': ('collapse',)
+            'fields': ('description',)
         }),
         ('Timeline', {
             'fields': ('start_date', 'end_date', 'duration')
@@ -168,9 +166,9 @@ class AchievementAdmin(admin.ModelAdmin):
     
     
     
-# Registering the Classification model with the admin site
-@admin.register(Classification)
-class ClassificationAdmin(admin.ModelAdmin):
+# 
+@admin.register(Certification)
+class CertificationAdmin(admin.ModelAdmin):
     list_display = ('title', 'organization', 'user_id', 'issue_date')
     list_filter = ('organization', 'user_id', 'issue_date')
     search_fields = ('title', 'organization', 'user_id__id')

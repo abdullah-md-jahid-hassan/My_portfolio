@@ -169,7 +169,9 @@ class Education(models.Model):
     id = models.AutoField(primary_key=True)
     degree = models.CharField(max_length=255, null=True, blank=True)
     institution = models.CharField(max_length=255, null=True, blank=True)
+    institution_logo = models.ImageField(upload_to='portfolio/img/education/institution_logo', null=True, blank=True)
     department = models.CharField(max_length=255, null=True, blank=True)
+    department_logo = models.ImageField(upload_to='portfolio/img/education/department_logo', null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
     grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
@@ -247,7 +249,7 @@ class Achievement(models.Model):
         
 
 # Certification model representing various certifications.  
-class Classification(models.Model):
+class Certification(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255, verbose_name="Certification Title")
     organization = models.CharField(max_length=255, verbose_name="Issuing Organization")
