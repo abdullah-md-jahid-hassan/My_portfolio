@@ -1,11 +1,7 @@
-#File : portfolio/moldels.py
+#File : portfolio/models.py
 
 from django.db import models
 from django.utils import timezone
-
-# For generic foreign key
-from django.contrib.contenttypes.fields import GenericForeignKey
-from django.contrib.contenttypes.models import ContentType
 
 
 # Imported functions
@@ -22,6 +18,7 @@ class User(models.Model):
     id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=100, null=True, blank=True)
     last_name = models.CharField(max_length=100, null=True, blank=True)
+    tag_line = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=255, null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     country = models.CharField(max_length=100, null=True, blank=True)
@@ -31,13 +28,58 @@ class User(models.Model):
     github = models.URLField(max_length=255, null=True, blank=True)
     linkedin = models.URLField(max_length=255, null=True, blank=True)
     portfolio = models.URLField(max_length=255, null=True, blank=True)
-    banner_image = models.ImageField(upload_to='portfolio/img/profile_images/', null=True, blank=True)
-    profile_image = models.ImageField(upload_to='portfolio/img/profile_images/', null=True, blank=True)
+    banner_image = models.ImageField(upload_to='portfolio/img/person/banner_images/', null=True, blank=True)
+    profile_image = models.ImageField(upload_to='portfolio/img/person/profile_images/', null=True, blank=True)
     hobbies = models.TextField(null=True, blank=True)
     language = models.CharField(max_length=255, null=True, blank=True)
+    meta_description = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.email} --> {self.first_name} {self.last_name}" if self.first_name and self.last_name else str(self.email)
+    
+    @property
+    # Generate dynamic meta keywords based on user profile and related models.
+    # This method can be used to create a list of keywords for SEO purposes.
+    def meta_keywords(self):
+        keywords = ['portfolio']
+        
+        # Add full name if available
+        if self.first_name and self.last_name:
+            full_name = f"{self.first_name} {self.last_name}"
+            keywords.append(full_name)
+        
+        # Add related objects' names/titles if they exist
+        related_fields = [
+            ('projects', 'title'),
+            ('services', 'title'),
+            ('certifications', 'title'),
+            ('skills', 'name'),
+            ('experiences', 'name'),
+            ('educations', 'degree'),
+        ]
+        
+        for relation, field_name in related_fields:
+            try:
+                items = getattr(self, relation).values_list(field_name, flat=True)
+                keywords.extend([item for item in items if item])
+            except Exception:
+                continue
+        
+        # Add other relevant fields
+        if self.tag_line:
+            keywords.append(self.tag_line)
+        if self.country:
+            keywords.append(self.country)
+        if self.city:
+            keywords.append(self.city)
+        if self.area:
+            keywords.append(self.area)
+        if self.language:
+            keywords.extend([lang.strip() for lang in self.language.split(',') if lang.strip()])
+        
+        # Remove duplicates and empty strings, then join
+        unique_keywords = set(filter(None, keywords))
+        return ", ".join(unique_keywords) if unique_keywords else ""
 
     class Meta:
         verbose_name = "User Profile"
@@ -61,11 +103,11 @@ class Skill(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
     percentage = models.PositiveIntegerField(null=True, blank=True)
     type = models.CharField(max_length=30, choices=SKILL_TYPE_CHOICES, default='other')
-    icon = models.ImageField(upload_to='skill_icons/', null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='skills')
+    icon = models.ImageField(upload_to='portfolio/img/skill_icons/', null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='skills')
 
     def __str__(self):
-        return f"{self.user_id} --> {self.name} ({self.percentage}%) [{self.get_type_display()}]"
+        return f"{self.user} --> {self.name} ({self.percentage}%) [{self.get_type_display()}]"
 
     class Meta:
         verbose_name = "Skill"
@@ -100,7 +142,7 @@ class Project(models.Model):
     live_link = models.URLField(max_length=255, null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
 
     def __str__(self):
         return self.title or f"Project {self.id}"
@@ -123,7 +165,7 @@ class Service(models.Model):
     title = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     icon_class = models.CharField(max_length=50, null=True, blank=True)  # FontAwesome class
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='services')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='services')
 
     def __str__(self):
         return self.title or f"Service {self.id}"
@@ -144,7 +186,7 @@ class Contact(models.Model):
     subject = models.CharField(max_length=255, null=True, blank=True)
     message = models.TextField(null=True, blank=True)
     submitted_at = models.DateTimeField(default=timezone.now)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='contacts')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='contacts')
 
     def __str__(self):
         return f"Message from {self.name} - {self.subject}"
@@ -153,6 +195,25 @@ class Contact(models.Model):
         verbose_name = "Contact Message"
         verbose_name_plural = "Contact Messages"
         ordering = ['-submitted_at']
+        
+        
+
+# Certification model representing various certifications.  
+class Certification(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=255, verbose_name="Certification Title")
+    organization = models.CharField(max_length=255, verbose_name="Issuing Organization")
+    certificate_image = models.ImageField(upload_to='portfolio/img/certificate_images/', null=True, blank=True)
+    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='certifications', verbose_name="User")
+    issue_date = models.DateField(null=True, blank=True, verbose_name="Issue Date")
+
+    def __str__(self):
+        return f"{self.title} from {self.organization}"
+
+    class Meta:
+        verbose_name = "Certification"
+        verbose_name_plural = "Certifications"
+        ordering = ['-issue_date']
 
 
 
@@ -176,7 +237,8 @@ class Education(models.Model):
     end_date = models.DateField(null=True, blank=True)
     grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
     grade_standard = models.CharField(max_length=10, choices=GRADE_STANDARD_CHOICES, null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='educations')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='educations')
+    certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='educations', null=True, blank=True)
 
     def __str__(self):
         return f"{self.degree} at {self.institution}"
@@ -205,7 +267,8 @@ class Experience(models.Model):
     description = models.TextField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiences')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiences')
+    certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='experiences', null=True, blank=True)
 
     def __str__(self):
         return f"{self.name} at {self.institution}"
@@ -219,47 +282,3 @@ class Experience(models.Model):
         verbose_name = "Experience"
         verbose_name_plural = "Experiences"
         ordering = ['-end_date']
-
-
-
-# Achievement model representing various achievements.
-# This model uses a Generic Foreign Key to link to different models (Education, Project, Experience).
-class Achievement(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=255, null=True, blank=True)
-    
-    # Generic Foreign Key setup
-    content_type = models.ForeignKey(
-        ContentType, 
-        on_delete=models.CASCADE,
-        limit_choices_to={'model__in': ['education', 'project', 'experience']}
-    )
-    object_id = models.PositiveIntegerField()
-    epe_id = GenericForeignKey('content_type', 'object_id')
-
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='achievements')
-
-    def __str__(self):
-        return self.name or f"Achievement {self.id}"
-
-    class Meta:
-        verbose_name = "Achievement"
-        verbose_name_plural = "Achievements"
-        
-        
-
-# Certification model representing various certifications.  
-class Certification(models.Model):
-    id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=255, verbose_name="Certification Title")
-    organization = models.CharField(max_length=255, verbose_name="Issuing Organization")
-    user_id = models.ForeignKey('User', on_delete=models.CASCADE, related_name='certifications', verbose_name="User")
-    issue_date = models.DateField(null=True, blank=True, verbose_name="Issue Date")
-
-    def __str__(self):
-        return f"{self.title} from {self.organization}"
-
-    class Meta:
-        verbose_name = "Certification"
-        verbose_name_plural = "Certifications"
-        ordering = ['-issue_date']
