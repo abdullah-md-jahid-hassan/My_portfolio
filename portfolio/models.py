@@ -239,7 +239,7 @@ class Education(models.Model):
     grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=False)
     grade_standard = models.CharField(max_length=10, choices=GRADE_STANDARD_CHOICES, null=True, blank=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='educations')
-    certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='educations', null=True, blank=True)
+    certificate = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='educations', null=True, blank=True)
 
     def __str__(self):
         return f"{self.degree} at {self.institution}"
@@ -263,13 +263,13 @@ class Education(models.Model):
 class Experience(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=False)  # Position name
-    institution = models.CharField(max_length=255, null=True, blank=False)  # Company/organization
-    logo = models.ImageField(upload_to='portfolio/img/project_images/', null=True, blank=True)
+    institution = models.CharField(max_length=255, null=True, blank=False)
+    logo = models.ImageField(upload_to='portfolio/img/experience/institution_logo', null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiences')
-    certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='experiences', null=True, blank=True)
+    certificate = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='experiences', null=True, blank=True)
 
     def __str__(self):
         return f"{self.name} at {self.institution}"

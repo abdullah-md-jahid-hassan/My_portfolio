@@ -221,62 +221,6 @@ h6 {
   .navmenu .active:focus {
     color: var(--nav-hover-color);
   }
-
-  .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    left: 14px;
-    top: 130%;
-    opacity: 0;
-    transition: 0.3s;
-    border-radius: 4px;
-    z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .navmenu .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -90%;
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: -100%;
-    visibility: visible;
-  }
 }
 
 /* Navmenu - Mobile */
@@ -991,7 +935,9 @@ section,
 }
 
 .projects .projects-content .projects-info .preview-link,
-.projects .projects-content .projects-info .details-link {
+.projects .projects-content .projects-info .details-link,
+.projects .projects-content .projects-info .github-link,
+.projects .projects-content .projects-info .live-link {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -1002,13 +948,27 @@ section,
 }
 
 .projects .projects-content .projects-info .preview-link:hover,
-.projects .projects-content .projects-info .details-link:hover {
+.projects .projects-content .projects-info .details-link:hover,
+.projects .projects-content .projects-info .github-link:hover,
+.projects .projects-content .projects-info .live-link:hover {
   color: var(--accent-color);
 }
 
 .projects .projects-content .projects-info .details-link {
   left: 50%;
   font-size: 34px;
+  line-height: 0;
+}
+
+.projects .projects-content .projects-info .github-link {
+  left: 61%;
+  font-size: 30px;
+  line-height: 0;
+}
+
+.projects .projects-content .projects-info .live-link {
+  left: 72%;
+  font-size: 30px;
   line-height: 0;
 }
 
@@ -1021,44 +981,59 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Educations Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
+.educations .educations-item {
   background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
   padding: 40px 40px;
   height: 100%;
   border-radius: 15px;
 }
 
-.pricing h3 {
+.educations .featured .duration {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 4px 15px 6px 15px;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.educations .logos {
+  display: flex;
+  margin-top: 25px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.educations .institution-logo,
+.educations .department-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.educations h3 {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
 }
 
-.pricing h4 {
-  color: var(--accent-color);
-  font-size: 48px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+.educations .institution {
   font-size: 18px;
-  font-weight: 500;
 }
 
-.pricing .description {
-  font-size: 14px;
+.educations .department {
+  font-size: 16px;
 }
 
-.pricing .cta-btn {
+.educations .cta-btn {
   border: 1px solid var(--default-color);
   color: var(--default-color);
   display: block;
@@ -1073,13 +1048,13 @@ section,
   margin-bottom: 6px;
 }
 
-.pricing .cta-btn:hover {
+.educations .cta-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
 
-.pricing ul {
+.educations ul {
   padding: 0;
   list-style: none;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -1087,73 +1062,60 @@ section,
   line-height: 20px;
 }
 
-.pricing ul li {
+.educations ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
 }
 
-.pricing ul li:last-child {
+.educations ul li:last-child {
   padding-bottom: 0;
 }
 
-.pricing ul i {
+.educations ul i {
   color: #059652;
   font-size: 24px;
   padding-right: 3px;
 }
 
-.pricing ul .na {
+.educations ul .na {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-.pricing ul .na i {
+.educations ul .na i {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
-.pricing ul .na span {
+.educations ul .na span {
   text-decoration: line-through;
 }
 
-.pricing .featured {
+.educations .featured {
   position: relative;
 }
 
-.pricing .featured .popular {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 4px 15px 6px 15px;
-  margin: 0;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.pricing .featured .cta-btn {
+.educations .featured .cta-btn {
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
 
 @media (max-width: 992px) {
-  .pricing .box {
+  .educations .box {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 767px) {
-  .pricing .box {
+  .educations .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
 }
 
 @media (max-width: 420px) {
-  .pricing .box {
+  .educations .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }

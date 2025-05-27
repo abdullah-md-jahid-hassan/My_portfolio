@@ -134,7 +134,7 @@ class EducationAdmin(admin.ModelAdmin):
             'fields': ('grade', 'grade_standard')
         }),
         ('Certificate', {
-            'fields': ('certificate_id',)
+            'fields': ('certificate',)
         }),
     )
 
@@ -158,6 +158,6 @@ class ExperienceAdmin(admin.ModelAdmin):
             'fields': ('start_date', 'end_date', 'duration')
         }),
         ('Certificate', {
-            'fields': ('certificate_id',)
+            'fields': ('certificate',)
         }),
     )

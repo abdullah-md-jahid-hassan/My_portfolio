@@ -26,6 +26,9 @@ def portfolio(request):
     # Get all used project categories
     projects_used_categories = list(ProjectCategory.objects.filter(project__user=person).distinct())
     
+    # Get all educations for the user
+    educations = person.educations.all()
+    
     context = {
         'person': person,
         'services': services,
@@ -33,6 +36,7 @@ def portfolio(request):
         'certifications' : certifications,
         'projects': projects,
         'projects_used_categories' : projects_used_categories,
+        'educations': educations,
         }
     template = loader.get_template('intro.html')
     return HttpResponse(template.render(context, request))
