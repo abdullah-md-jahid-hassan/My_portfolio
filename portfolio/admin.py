@@ -71,7 +71,7 @@ class ProjectAdmin(admin.ModelAdmin):
     
     fieldsets = (
         (None, {
-            'fields': ('user', 'title', 'categories')  # Updated to include categories
+            'fields': ('user', 'title', 'tag_line', 'categories')  # Updated to include categories
         }),
         ('Details', {
             'fields': ('description', 'image_path')

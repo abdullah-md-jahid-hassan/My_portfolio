@@ -19,6 +19,12 @@ from django.urls import path
 from django.urls import include
 
 urlpatterns = [
+    # URL for live reloading during development
+    path("__reload__/", include("django_browser_reload.urls")),
+    
+    # Admin interface for managing the portfolio
     path('control/', admin.site.urls),
+    
+    # Main portfolio application URLs
     path('', include('portfolio.urls')),
 ]

@@ -16,20 +16,20 @@ from my_portfolio.utils.date_utils import duration
 # The 'profile_image' field can be used to store a profile picture.
 class User(models.Model):
     id = models.AutoField(primary_key=True)
-    first_name = models.CharField(max_length=100, null=True, blank=True)
+    first_name = models.CharField(max_length=100, null=True, blank=False)
     last_name = models.CharField(max_length=100, null=True, blank=True)
     tag_line = models.CharField(max_length=100, null=True, blank=True)
-    email = models.EmailField(max_length=255, null=True, blank=True)
-    phone = models.CharField(max_length=20, null=True, blank=True)
-    country = models.CharField(max_length=100, null=True, blank=True)
-    city = models.CharField(max_length=100, null=True, blank=True)
-    area = models.CharField(max_length=100, null=True, blank=True)
+    email = models.EmailField(max_length=255, null=True, blank=False, unique=True)
+    phone = models.CharField(max_length=20, null=True, blank=False, unique=True)
+    country = models.CharField(max_length=100, null=True, blank=False)
+    city = models.CharField(max_length=100, null=True, blank=False)
+    area = models.CharField(max_length=100, null=True, blank=False)
     about = models.TextField(null=True, blank=True)
     github = models.URLField(max_length=255, null=True, blank=True)
     linkedin = models.URLField(max_length=255, null=True, blank=True)
     portfolio = models.URLField(max_length=255, null=True, blank=True)
-    banner_image = models.ImageField(upload_to='portfolio/img/person/banner_images/', null=True, blank=True)
-    profile_image = models.ImageField(upload_to='portfolio/img/person/profile_images/', null=True, blank=True)
+    banner_image = models.ImageField(upload_to='portfolio/img/person/banner_images/', null=True, blank=False)
+    profile_image = models.ImageField(upload_to='portfolio/img/person/profile_images/', null=True, blank=False)
     hobbies = models.TextField(null=True, blank=True)
     language = models.CharField(max_length=255, null=True, blank=True)
     meta_description = models.TextField(null=True, blank=True)
@@ -100,10 +100,10 @@ class Skill(models.Model):
     ]
 
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=100, null=True, blank=True)
-    percentage = models.PositiveIntegerField(null=True, blank=True)
+    name = models.CharField(max_length=100, null=True, blank=False)
+    percentage = models.PositiveIntegerField(null=True, blank=False)
     type = models.CharField(max_length=30, choices=SKILL_TYPE_CHOICES, default='other')
-    icon = models.ImageField(upload_to='portfolio/img/skill_icons/', null=True, blank=True)
+    icon = models.ImageField(upload_to='portfolio/img/skill_icons/', null=True, blank=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='skills')
 
     def __str__(self):
@@ -134,7 +134,8 @@ class ProjectCategory(models.Model):
 # The 'category' field can be used to classify projects into different domains.
 class Project(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=255, null=True, blank=True)
+    title = models.CharField(max_length=255, null=True, blank=False)
+    tag_line = models.CharField(max_length=255, null=True, blank=True)
     categories = models.ManyToManyField(ProjectCategory)
     description = models.TextField(null=True, blank=True)
     image_path = models.ImageField(upload_to='portfolio/img/project_images/', null=True, blank=True)
@@ -162,9 +163,9 @@ class Project(models.Model):
 # This model can be used to showcase different services or skills.
 class Service(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100, null=True, blank=True)
+    title = models.CharField(max_length=100, null=True, blank=False)
     description = models.TextField(null=True, blank=True)
-    icon_class = models.CharField(max_length=50, null=True, blank=True)  # FontAwesome class
+    icon_class = models.CharField(max_length=50, null=True, blank=True)  # FontAwesome/bootstrap class
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='services')
 
     def __str__(self):
@@ -181,8 +182,8 @@ class Service(models.Model):
 # This model can be used to store inquiries, feedback, etc.
 class Contact(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=100, null=True, blank=True)
-    email = models.EmailField(max_length=255, null=True, blank=True)
+    name = models.CharField(max_length=100, null=True, blank=False)
+    email = models.EmailField(max_length=255, null=True, blank=False)
     subject = models.CharField(max_length=255, null=True, blank=True)
     message = models.TextField(null=True, blank=True)
     submitted_at = models.DateTimeField(default=timezone.now)
@@ -201,9 +202,9 @@ class Contact(models.Model):
 # Certification model representing various certifications.  
 class Certification(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=255, verbose_name="Certification Title")
-    organization = models.CharField(max_length=255, verbose_name="Issuing Organization")
-    certificate_image = models.ImageField(upload_to='portfolio/img/certificate_images/', null=True, blank=True)
+    title = models.CharField(max_length=255, verbose_name="Certification Title", null=True, blank=False)
+    organization = models.CharField(max_length=255, verbose_name="Issuing Organization", null=True, blank=False)
+    certificate_image = models.ImageField(upload_to='portfolio/img/certificate_images/', null=True, blank=False)
     user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='certifications', verbose_name="User")
     issue_date = models.DateField(null=True, blank=True, verbose_name="Issue Date")
 
@@ -228,15 +229,15 @@ class Education(models.Model):
     ]
     
     id = models.AutoField(primary_key=True)
-    degree = models.CharField(max_length=255, null=True, blank=True)
-    institution = models.CharField(max_length=255, null=True, blank=True)
+    degree = models.CharField(max_length=255, null=True, blank=False)
+    institution = models.CharField(max_length=255, null=True, blank=False)
     institution_logo = models.ImageField(upload_to='portfolio/img/education/institution_logo', null=True, blank=True)
     department = models.CharField(max_length=255, null=True, blank=True)
     department_logo = models.ImageField(upload_to='portfolio/img/education/department_logo', null=True, blank=True)
-    start_date = models.DateField(null=True, blank=True)
+    start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
-    grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
-    grade_standard = models.CharField(max_length=10, choices=GRADE_STANDARD_CHOICES, null=True, blank=True)
+    grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=False)
+    grade_standard = models.CharField(max_length=10, choices=GRADE_STANDARD_CHOICES, null=True, blank=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='educations')
     certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='educations', null=True, blank=True)
 
@@ -261,11 +262,11 @@ class Education(models.Model):
 # This model can be used to store internships, jobs, etc.
 class Experience(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=255, null=True, blank=True)  # Position name
-    institution = models.CharField(max_length=255, null=True, blank=True)  # Company/organization
+    name = models.CharField(max_length=255, null=True, blank=False)  # Position name
+    institution = models.CharField(max_length=255, null=True, blank=False)  # Company/organization
     logo = models.ImageField(upload_to='portfolio/img/project_images/', null=True, blank=True)
     description = models.TextField(null=True, blank=True)
-    start_date = models.DateField(null=True, blank=True)
+    start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiences')
     certificate_id = models.ForeignKey(Certification, on_delete=models.CASCADE, related_name='experiences', null=True, blank=True)

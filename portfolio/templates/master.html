@@ -6,6 +6,12 @@
 <html lang="en">
 
 <head>
+
+  <!-- For Live Reload -->
+  {% load django_browser_reload %}
+  {% django_browser_reload_script %}
+
+  <!-- Block: Title -->
   <title>{% block title %}{% endblock title %}</title>
 
   <!-- Meta tags -->
@@ -37,36 +43,80 @@
 
 </head>
 
-<body class="portfolio-details-page">
+<body>
 
+  <!-- header & nav_bar -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#home" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">{{ person.last_name }}</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- for body -->
   {% block body %}{% endblock body %}
 
+
+  <!-- footer -->
   <footer id="footer" class="footer light-background">
     <div class="container">
       <h3 class="sitename">{{ person.first_name }} {{ person.last_name}}</h3>
       <p>{{ person.tag_line }}</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="{{ person.linkedin }}"><i class="bi bi-linkedin"></i></a>
-        <a href="{{ person.github }}"><i class="bi bi-github"></i></a>
-        <a href="portfolio"><i class="bi bi-web"></i></a>
+        <a target="_blank" href="{{ person.linkedin }}"><i class="bi bi-linkedin"></i></a>
+        <a target="_blank" href="{{ person.github }}"><i class="bi bi-github"></i></a>
+        <a target="_blank" href="{{ person.portfolio }}"><i class="bi bi-person-fill"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Folio</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Front-end Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
 <!-- Vendor JS Files -->
   <script src="{% static "portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
@@ -78,8 +128,12 @@
   <script src="{% static "portfolio/vendor/imagesloaded/imagesloaded.pkgd.min.js" %}"></script>
   <script src="{% static "portfolio/vendor/isotope-layout/isotope.pkgd.min.js" %}"></script>
 
+
   <!-- Main JS File -->
   <script src="{% static "portfolio/js/main.js" %}"></script>
+
+  <!-- Font Awesome js -->
+  <script src="https://kit.fontawesome.com/58ab45c4fa.js" crossorigin="anonymous"></script>
 
 </body>
 

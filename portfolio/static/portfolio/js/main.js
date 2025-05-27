@@ -1,10 +1,4 @@
-/**
-* Template Name: Folio
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Updated: Aug 08 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/** File: portfolio\static\portfolio\js\main.js */
 
 (function() {
   "use strict";
@@ -140,9 +134,37 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
+
+  let glightbox = GLightbox({ selector: '.glightbox' });
+
+  function refreshGlightbox() {
+    if (glightbox) glightbox.destroy();  // Destroy existing instance
+    glightbox = GLightbox({
+      selector: '.isotope-container .isotope-item:not([style*="display: none"]) .glightbox'
+    });
+  }
+
+  document.querySelectorAll('.isotope-filters li').forEach(function(filterBtn) {
+    filterBtn.addEventListener('click', function() {
+      this.closest('.isotope-filters').querySelector('.filter-active').classList.remove('filter-active');
+      this.classList.add('filter-active');
+
+      initIsotope.arrange({
+        filter: this.getAttribute('data-filter')
+      });
+
+      // Wait for Isotope animation to complete before refreshing GLightbox
+      setTimeout(() => {
+        refreshGlightbox();
+        if (typeof aosInit === 'function') aosInit();
+      }, 400);
+    }, false);
   });
+
+
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init isotope layout and filters
