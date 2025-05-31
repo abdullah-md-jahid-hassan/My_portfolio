@@ -1461,3 +1461,60 @@ section,
 .hero .social-links a {
   color: color-mix(in srgb, #000000, transparent 50%);
 }
+
+
+/* portfolio was replaced by projects */
+
+/* testimonial was replaced by certifications*/
+
+/* pricing was rebased by educations */
+
+
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.skill-category {
+  width: 400px;
+  margin: 5px;
+  padding: 20px;
+}
+
+
+
+.skills .skill-category h4 {
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.skills .skill-category .title:hover{
+  color: var(--accent-color);
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    background-color: rgba(184, 160, 126, 0.3);
+    height: 6px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    background-color: rgba(184, 160, 126, 1);
+    height: 100%;
+    border-radius: 3px;
+}

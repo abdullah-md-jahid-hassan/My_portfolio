@@ -54,7 +54,7 @@
           <div class="col-lg-7 content">
             <h3>{{ person.tag_line }}</h3>
             <p>
-              {{ person.about |linebreaksbr }}
+              {{ person.about|linebreaksbr }}
             </p>
           </div>
         </div>
@@ -62,6 +62,178 @@
       </div>
 
     </section><!-- /About Section -->
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <!-- Skills body -->
+      <div class="container skill-body">
+        <div class="skill-body justify-content-center align-items-center row row-cols-auto">
+
+          <div class="skill-category col">
+              <h4 class="title">Industry Knowledge</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Brand Identity</span>
+                      <span>80%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 80%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Product Design</span>
+                      <span>95%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+
+          <div class="skill-category col">
+              <h4 class="title">Basic</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Thre ldfn</span>
+                      <span>65%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 65%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Marketing</span>
+                      <span>40%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 40%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+
+          <div class="skill-category col">
+              <h4 class="title">Others</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Gosip</span>
+                      <span>95%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Football</span>
+                      <span>20%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 20%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+
+          <div class="skill-category col">
+              <h4 class="title">Others</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Gosip</span>
+                      <span>95%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Football</span>
+                      <span>20%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 20%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+
+          <div class="skill-category col">
+              <h4 class="title">Others</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Gosip</span>
+                      <span>95%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Football</span>
+                      <span>20%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 20%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+
+          <div class="skill-category col">
+              <h4 class="title">Others</h4>
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Gosip</span>
+                      <span>95%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+              <div class="skill-item">
+                  <div class="skill-name">
+                      <span>Football</span>
+                      <span>20%</span>
+                  </div>
+                  <div class="progress-bar">
+                      <div class="progress-fill" style="width: 20%"></div>
+                  </div>
+              </div> <!-- End skill-item -->
+
+          </div> <!-- End skill-category -->
+        
+        </div> <!-- End row -->
+
+      </div>
+
+
+      
+    </section><!-- /skills Section -->
 
 
 
@@ -74,14 +246,13 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter=".filter-featured" data-layout="masonry" data-sort="original-order">
 
           <ul class="projects-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-
+            <li data-filter=".filter-featured" class="filter-active">Featured</li>
+            <li data-filter="*">All</li>
             {% for category in  projects_used_categories %}
-              <li data-filter=".filter-{{ category.slug|slugify }}">{{ category.name }}</li>
+              <li data-filter=".filter-{{category.slug|slugify}}">{{category.name}} ({{category.occurrence}})</li>
             {% endfor %}
 
           </ul><!-- End projects Filters -->
@@ -93,8 +264,12 @@
             {% for project in projects %}
               <div class="col-lg-4 col-md-6 projects-item isotope-item
                 {% comment %}
-                 Add all project's category as filter class
+                 Add all project's category and featured (if true) as filter class
                 {% endcomment %}
+                {% if project.is_featured %}
+                 filter-featured
+                {% endif %}
+                 
                 {% for category in project.categories.all %}
                  filter-{{ category.slug|slugify }}
                 {% endfor %}
@@ -187,9 +362,9 @@
               <div class="icon flex-shrink-0">
                 <i class="
                   {% if service.icon_class %}
-                  {{ service.icon_class }}
+                    {{ service.icon_class }}
                   {% else %}
-                  bi bi-briefcase
+                    bi bi-briefcase
                   {% endif %}
                 "></i>
               </div>

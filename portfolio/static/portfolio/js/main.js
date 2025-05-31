@@ -240,3 +240,9 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+
+// My implements
+
+//Skills Section

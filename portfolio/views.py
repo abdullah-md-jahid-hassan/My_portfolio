@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from django.db.models import Count
 from .models import User, ProjectCategory
 
 # Create your views here.
@@ -24,7 +25,12 @@ def portfolio(request):
     projects = person.projects.all()
     
     # Get all used project categories
-    projects_used_categories = list(ProjectCategory.objects.filter(project__user=person).distinct())
+    projects_used_categories = (
+        ProjectCategory.objects
+        .filter(project__user=person)
+        .annotate(occurrence=Count('project'))
+        .distinct()
+)
     
     # Get all educations for the user
     educations = person.educations.all()

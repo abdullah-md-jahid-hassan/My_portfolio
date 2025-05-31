@@ -1,6 +1,8 @@
 #File : portfolio/admin.py
 
 from django.contrib import admin
+from django.forms.widgets import RadioSelect 
+from django import forms
 from .models import User, Skill, Project, Service, Contact, Education, Experience, Certification, ProjectCategory
 
 
@@ -56,12 +58,29 @@ class ProjectCategoryAdmin(admin.ModelAdmin):
 
 
 # Registering the Project model with the admin site
+class ProjectAdminForm(forms.ModelForm):
+    # Custom form for the Project model to handle the toggle switch for is_featured field
+    class Meta:
+        model = Project
+        fields = '__all__'
+        widgets = {
+            'is_featured': forms.CheckboxInput(attrs={'class': 'toggle-switch'}),
+        }
+
+    # Custom media for the admin form to include toggle switch CSS
+    class Media:
+        css = {
+            'all': ('portfolio/css/toggle.css',) 
+        }
+        
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
+    form = ProjectAdminForm
+    
     list_display = ('title', 'display_categories', 'start_date', 'end_date', 'user')
-    list_filter = ('categories', 'user')  # Updated to filter by categories
+    list_filter = ('categories', 'user')
     search_fields = ('title', 'description', 'user__id')
-    filter_horizontal = ('categories',)  # Adds a nice widget for selecting multiple categories
+    filter_horizontal = ('categories',)
     date_hierarchy = 'end_date'
     readonly_fields = ('duration',)
     
@@ -71,7 +90,7 @@ class ProjectAdmin(admin.ModelAdmin):
     
     fieldsets = (
         (None, {
-            'fields': ('user', 'title', 'tag_line', 'categories')  # Updated to include categories
+            'fields': ('user', 'title', 'tag_line', 'categories', 'is_featured')
         }),
         ('Details', {
             'fields': ('description', 'image_path')

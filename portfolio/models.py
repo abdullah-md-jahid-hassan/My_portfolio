@@ -3,13 +3,27 @@
 from django.db import models
 from django.utils import timezone
 
+# Importing necessary functions for custom ordering
+from django.db.models import Case, When, Value, IntegerField
 
 # Imported functions
 # To find the duration.
 from my_portfolio.utils.date_utils import duration
 
-# Create your models here.
 
+# Custom Manager
+class ProjectManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().annotate(
+            null_end_date=Case(
+                When(end_date__isnull=True, then=Value(0)),
+                default=Value(1),
+                output_field=IntegerField(),
+            )
+        ).order_by('null_end_date', '-end_date')
+
+
+# Create your models here.
 
 #User profile model containing personal and professional information.
 # This model can be used to store user details, contact information, etc.
@@ -143,7 +157,10 @@ class Project(models.Model):
     live_link = models.URLField(max_length=255, null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
+    is_featured = models.BooleanField(default=False, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
+
+    objects = ProjectManager() # Custom manager to handle null end dates
 
     def __str__(self):
         return self.title or f"Project {self.id}"
@@ -155,7 +172,6 @@ class Project(models.Model):
     class Meta:
         verbose_name = "Project"
         verbose_name_plural = "Projects"
-        ordering = ['-end_date']
 
 
 
