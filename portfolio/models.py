@@ -287,7 +287,7 @@ class Experience(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=False)  # Position name
     institution = models.CharField(max_length=255, null=True, blank=False)
-    logo = models.ImageField(upload_to='portfolio/img/experience/institution_logo', null=True, blank=True)
+    address = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
@@ -305,4 +305,4 @@ class Experience(models.Model):
     class Meta:
         verbose_name = "Experience"
         verbose_name_plural = "Experiences"
-        ordering = ['-end_date']
+        ordering = ['-start_date']

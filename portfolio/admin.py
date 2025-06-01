@@ -177,7 +177,7 @@ class ExperienceAdmin(admin.ModelAdmin):
     readonly_fields = ('duration',)
     fieldsets = (
         (None, {
-            'fields': ('user', 'name', 'institution')
+            'fields': ('user', 'name', 'institution', 'address')
         }),
         ('Details', {
             'fields': ('description',)

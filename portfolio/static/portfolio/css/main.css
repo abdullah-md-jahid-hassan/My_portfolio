@@ -1474,6 +1474,45 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+.skills .skills-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.skills .skills-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills .skills-filters li:hover,
+.skills .skills-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.skills .skills-filters li:first-child {
+  margin-left: 0;
+}
+
+.skills .skills-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .skills .skills-filters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
 .skill-category {
   width: 400px;
   margin-left: 30px;
@@ -1518,4 +1557,142 @@ section,
     background-color: rgba(184, 160, 126, 1);
     height: 100%;
     border-radius: 3px;
+}
+
+
+
+
+/* Experience Section */
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+}
+
+.timeline-left {
+  width: 30%;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.job-date {
+  font-size: 14px;
+}
+
+.experiences .cta-btn {
+  border: 2px solid var(--default-color);
+  color: var(--default-color);
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.experiences .cta-btn:hover {
+  background: var(--default-color);
+  border-color: var(--accent-color);
+}
+
+.timeline-line {
+  width: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-line::before {
+  content: '';
+  width: 2px;
+  background-color: var(--accent-color);
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-line::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-right {
+  width: 60%;
+  margin-bottom: 150px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.company-location {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.company-link {
+  color: var(--accent-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* .timeline-item {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .timeline-line {
+    display: none;
+  } */
+
+
+  .timeline-item {
+    gap: 10px;
+  }
 }

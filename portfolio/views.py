@@ -33,13 +33,26 @@ def portfolio(request):
     # Get all educations for the user
     educations = person.educations.all()
     
-    # Get all skills for the user
     
+    # Get all skills category for the user
+    used_skills_categories = (
+    SkillCategory.objects
+    .filter(skills__user=person)
+    .annotate(occurrence=Count('skills'))
+    .distinct()
+)
+    
+    # Skills grouped by category
+    used_skills_categories = SkillCategory.objects.prefetch_related(
+        Prefetch('skills', queryset=Skill.objects.filter(user=person))
+    ).filter(skills__user=person).distinct()
     
     # Skills grouped by category
     skill_categories = SkillCategory.objects.prefetch_related(
         Prefetch('skills', queryset=Skill.objects.filter(user=person))
     ).filter(skills__user=person).distinct()
+    
+    experiences = person.experiences.all()
     
     context = {
         'person': person,
@@ -49,6 +62,8 @@ def portfolio(request):
         'projects_used_categories' : projects_used_categories,
         'educations': educations,
         'skill_categories': skill_categories,
+        'used_skills_categories': used_skills_categories,
+        'experiences': experiences,
         }
     template = loader.get_template('intro.html')
     return HttpResponse(template.render(context, request))

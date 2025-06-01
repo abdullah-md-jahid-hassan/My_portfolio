@@ -66,7 +66,7 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -75,35 +75,47 @@
 
       <!-- Skills body -->
       <div class="container skill-body">
-        <div class="skill-body justify-content-center align-items-center row row-cols-auto">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          {% for category in skill_categories %}
-            <div class="skill-category col" data-aos="fade-up" data-aos-delay="100">
-                <h4 class="title">{{ category.name }}</h4>
+          <ul class="skills-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+            {% for category in used_skills_categories %}
+              <li data-filter=".filter-{{category.slug|slugify}}">{{category.name}}</li>
+            {% endfor %}
 
-                {% for skill in category.skills.all %}
-                  <div class="skill-item">
-                      <div class="skill-name d-flex justify-content-between">
-                          <span>{{ skill.name }}</span>
-                          <span>{{ skill.percentage }}%</span>
-                      </div>
-                      <div class="progress-bar">
-                          <div class="progress-fill" style="width: {{ skill.percentage }}%"></div>
-                      </div>
-                  </div> <!-- End skill-item -->
-                {% endfor %}
+          </ul><!-- End skills Filters -->
 
-            </div> <!-- End skill-category -->
-          {% endfor %}
 
-        
-        </div> <!-- End row -->
+      <div class="isotope-container skill-body justify-content-center align-items-center row" data-aos="zoom-in" data-aos-delay="200">
+
+            {% for category in skill_categories %}
+              <div class="skill-category col-lg-4 col-md-6 isotope-item filter-{{ category.slug|slugify }}">
+
+                  <h4 class="title">{{ category.name }}</h4>
+
+                  {% for skill in category.skills.all %}
+                    <div class="skill-item">
+                        <div class="skill-name d-flex justify-content-between">
+                            <span>{{ skill.name }}</span>
+                            <span>{{ skill.percentage }}%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: {{ skill.percentage }}%"></div>
+                        </div>
+                    </div> <!-- End skill-item -->
+                  {% endfor %}
+
+              </div> <!-- End skill-category -->
+            {% endfor %}
+          
+          </div> <!-- End row -->
+
+        </div> <!-- End isotope-layout -->
 
       </div>
-
-
       
     </section><!-- /skills Section -->
+
 
 
 
@@ -209,6 +221,59 @@
       </div>
 
     </section><!-- /projects Section -->
+
+
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experiences</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="timeline">
+
+          {% for experience in experiences %}
+            <div class="timeline-item">
+              <!-- Timeline Left -->
+              <div class="timeline-left">
+                <h3 class="job-title">{{experience.name}}</h3>
+                <p class="job-date">{{experience.start_date|date:"F, Y"}}
+, 
+                  {% if experience.end_date %}
+                    {{experience.end_date|date:"F, Y"}}
+                  {% else %}
+                    Present
+                  {% endif %}
+                </p>
+
+                {% if experience.certificate %}
+                  <a href="#cer-{{experience.certificate.id}}" class="cta-btn"><i class="bi bi-eye"></i> Certification</a>
+                {% endif %}
+              </div>
+
+              <!-- Timeline Line -->
+              <div class="timeline-line"></div>
+
+              <!-- Timeline Right -->
+              <div class="timeline-right">
+                <h4 class="company-name">{{experience.institution}}</h4>
+                <p class="company-location">{{experience.address}}</p>
+                <p class="job-description">{{experience.description|linebreaksbr}}</p>
+                <a href="https://expressosoft.com" class="company-link" target="_blank"><i class="bi bi-link-45deg"></i> https://expressosoft.com</a>
+              </div>
+            </div> <!-- End timeline item -->
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </section><!-- /experiences Section -->
 
     
 
