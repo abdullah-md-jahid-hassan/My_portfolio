@@ -100,28 +100,35 @@ class User(models.Model):
         verbose_name_plural = "User Profiles"
 
 
+# SkillCategory model representing different categories of Skills.
+# This model can be used to classify Skills into different domains.
+class SkillCategory(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    slug = models.SlugField(max_length=50, unique=True)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Skill Category"
+        verbose_name_plural = "Skill Categories"
+
+
+
+
+
 #Skills model representing different skills with proficiency percentages.
 # This model can be used to showcase technical skills, languages, etc.
 # The 'percentage' field can be used to indicate the proficiency level.
 class Skill(models.Model):
-    SKILL_TYPE_CHOICES = [
-        ('backend', 'Backend Development'),
-        ('frontend', 'Frontend & Web'),
-        ('database', 'Database & DevOps'),
-        ('hardware', 'Hardware & Embedded Systems'),
-        ('soft', 'Soft Skills'),
-        ('other', 'Other Skills'),
-    ]
-
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100, null=True, blank=False)
     percentage = models.PositiveIntegerField(null=True, blank=False)
-    type = models.CharField(max_length=30, choices=SKILL_TYPE_CHOICES, default='other')
-    icon = models.ImageField(upload_to='portfolio/img/skill_icons/', null=True, blank=False)
+    category = models.ForeignKey(SkillCategory, on_delete=models.CASCADE, related_name='skills')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='skills')
 
     def __str__(self):
-        return f"{self.user} --> {self.name} ({self.percentage}%) [{self.get_type_display()}]"
+        return f"{self.user} --> {self.category} --> {self.name} - ({self.percentage}%)"
 
     class Meta:
         verbose_name = "Skill"

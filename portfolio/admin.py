@@ -3,7 +3,7 @@
 from django.contrib import admin
 from django.forms.widgets import RadioSelect 
 from django import forms
-from .models import User, Skill, Project, Service, Contact, Education, Experience, Certification, ProjectCategory
+from .models import User, Skill, Project, Service, Contact, Education, Experience, Certification, ProjectCategory, SkillCategory
 
 
 # Register your models here.
@@ -38,12 +38,21 @@ class UserAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
+    
+    
+
+# Registering the SkillCategory model with the admin site
+@admin.register(SkillCategory)
+class SkillCategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'slug')
+    prepopulated_fields = {'slug': ('name',)}  # Auto-generate slug from name
+    search_fields = ('name',)
 
 # Registering the Skill model with the admin site
 @admin.register(Skill)
 class SkillAdmin(admin.ModelAdmin):
-    list_display = ('name', 'percentage', 'type', 'user')
-    list_filter = ('type', 'user')
+    list_display = ('name', 'percentage', 'category', 'user')
+    list_filter = ('category', 'user')
     search_fields = ('name', 'user__id')
     
     

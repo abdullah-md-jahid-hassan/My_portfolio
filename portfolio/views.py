@@ -1,8 +1,9 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
-from django.db.models import Count
-from .models import User, ProjectCategory
+from django.shortcuts import render # Import render for rendering templates
+from django.http import HttpResponse # Import HttpResponse for returning responses
+from django.template import loader # Import loader for rendering templates
+from django.db.models import Count # Import Count for aggregating data
+from django.db.models import Prefetch # Import Prefetch for optimizing queries
+from .models import User, ProjectCategory, SkillCategory, Skill # Import necessary models
 
 # Create your views here.
 
@@ -14,9 +15,6 @@ def portfolio(request):
     
     # Services of the user
     services = person.services.all()
-    
-    # Skills of the user
-    skills = person.skills.all()
     
     # Classifications of the user
     certifications = person.certifications.all()
@@ -30,19 +28,27 @@ def portfolio(request):
         .filter(project__user=person)
         .annotate(occurrence=Count('project'))
         .distinct()
-)
+    )
     
     # Get all educations for the user
     educations = person.educations.all()
     
+    # Get all skills for the user
+    
+    
+    # Skills grouped by category
+    skill_categories = SkillCategory.objects.prefetch_related(
+        Prefetch('skills', queryset=Skill.objects.filter(user=person))
+    ).filter(skills__user=person).distinct()
+    
     context = {
         'person': person,
         'services': services,
-        'skills': skills,
         'certifications' : certifications,
         'projects': projects,
         'projects_used_categories' : projects_used_categories,
         'educations': educations,
+        'skill_categories': skill_categories,
         }
     template = loader.get_template('intro.html')
     return HttpResponse(template.render(context, request))
