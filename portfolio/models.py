@@ -38,6 +38,7 @@ class User(models.Model):
     country = models.CharField(max_length=100, null=True, blank=False)
     city = models.CharField(max_length=100, null=True, blank=False)
     area = models.CharField(max_length=100, null=True, blank=False)
+    location_link = models.CharField(max_length=255, null=True, blank=True)
     about = models.TextField(null=True, blank=True)
     github = models.URLField(max_length=255, null=True, blank=True)
     linkedin = models.URLField(max_length=255, null=True, blank=True)

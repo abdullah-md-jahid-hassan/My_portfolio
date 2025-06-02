@@ -23,7 +23,7 @@ class UserAdmin(admin.ModelAdmin):
             'fields': ('first_name', 'last_name','tag_line', 'email', 'phone', 'banner_image', 'profile_image')
         }),
         ('Location', {
-            'fields': ('country', 'city', 'area')
+            'fields': ('country', 'city', 'area', 'location_link')
         }),
         ('Professional Links', {
             'fields': ('github', 'linkedin', 'portfolio'),

@@ -437,6 +437,8 @@
 
 
 
+
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -456,7 +458,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <a href="{{person.location_link}}" target="_blank">{{person.area}}, {{person.city}}, {{person.country}}</a>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -466,7 +468,7 @@
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call<br></h3>
-                  <p>+1 5589 55488 55</p>
+                  <a href="tel:{{person.phone}}" target="_blank">{{person.phone}}</a>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -476,7 +478,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email</h3>
-                  <p>info@example.com</p>
+                  <a href="mailto:{{person.email}}" target="_blank">{{person.email}}</a>
                 </div>
               </div>
             </div><!-- End Info Item -->
