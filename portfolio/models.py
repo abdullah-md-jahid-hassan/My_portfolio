@@ -165,7 +165,7 @@ class Project(models.Model):
     live_link = models.URLField(max_length=255, null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
-    is_featured = models.BooleanField(default=False, null=True)
+    is_featured = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
 
     objects = ProjectManager() # Custom manager to handle null end dates
@@ -210,6 +210,7 @@ class Contact(models.Model):
     email = models.EmailField(max_length=255, null=True, blank=False)
     subject = models.CharField(max_length=255, null=True, blank=True)
     message = models.TextField(null=True, blank=True)
+    is_seen = models.BooleanField(default=False)
     submitted_at = models.DateTimeField(default=timezone.now)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='contacts')
 

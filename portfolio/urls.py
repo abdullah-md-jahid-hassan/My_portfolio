@@ -5,7 +5,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.portfolio, name='portfolio'),
+    path('', views.portfolio_landing_view, name='portfolio'),
+    path('save-contact-message/', views.save_contact_message, name='save_contact_message'),
 ]
 
 

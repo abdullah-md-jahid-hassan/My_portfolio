@@ -122,13 +122,30 @@ class ServiceAdmin(admin.ModelAdmin):
     search_fields = ('title', 'description', 'user__id')
 
 
+# Registering the Contact model with the admin site
+class ContactAdminForm(forms.ModelForm):
+    # Custom form for the Contact model to handle the toggle switch for is_seen field
+    class Meta:
+        model = Contact
+        fields = '__all__'
+        widgets = {
+            'is_seen': forms.CheckboxInput(attrs={'class': 'toggle-switch'}),
+        }
 
+    # Custom media for the admin form to include toggle switch CSS
+    class Media:
+        css = {
+            'all': ('portfolio/css/toggle.css',) 
+        }
+        
 # Registering the Contact model with the admin site
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
+    form = ContactAdminForm
+    
     list_display = ('name', 'email', 'subject', 'submitted_at', 'user')
     list_filter = ('user', 'submitted_at')
-    search_fields = ('name', 'email', 'subject' 'user__id')
+    search_fields = ('name', 'email', 'subject', 'user__id')
     readonly_fields = ('submitted_at',)
     date_hierarchy = 'submitted_at'
 
