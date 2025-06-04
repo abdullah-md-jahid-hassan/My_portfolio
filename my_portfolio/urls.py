@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # URL for live reloading during development
@@ -26,5 +28,7 @@ urlpatterns = [
     path('control/', admin.site.urls),
     
     # Main portfolio application URLs
-    path('', include('portfolio.urls')),
+    path('', include('landing_spot.urls')),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
