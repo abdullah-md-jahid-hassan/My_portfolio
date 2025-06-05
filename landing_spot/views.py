@@ -3,8 +3,7 @@
 from django.shortcuts import render, redirect # Import render for rendering templates
 from django.http import HttpResponse # Import HttpResponse for returning responses
 from django.template import loader # Import loader for rendering templates
-from django.db.models import Count # Import Count for aggregating data
-from django.db.models import Prefetch # Import Prefetch for optimizing queries
+from django.db.models import Count, Prefetch # Import Count for aggregating data, Prefetch for optimizing queries
 from .models import User, ProjectCategory, SkillCategory, Skill, Contact # Import necessary models
 from django.contrib import messages # Import messages for user feedback
 from .forms import ContactForm # Import the ContactForm for handling contact messages

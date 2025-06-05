@@ -10,18 +10,7 @@ from django.db.models import Case, When, Value, IntegerField
 # Imported functions
 # To find the duration.
 from my_portfolio.utils.date_utils import duration
-
-
-# Custom Manager
-class ProjectManager(models.Manager):
-    def get_queryset(self):
-        return super().get_queryset().annotate(
-            null_end_date=Case(
-                When(end_date__isnull=True, then=Value(0)),
-                default=Value(1),
-                output_field=IntegerField(),
-            )
-        ).order_by('null_end_date', '-end_date')
+from my_portfolio.utils.models_utils import CustomProjectOrder
 
 
 # Create your models here.
@@ -40,6 +29,7 @@ class User(AbstractUser):
     github = models.URLField(max_length=255, null=True, blank=True)
     linkedin = models.URLField(max_length=255, null=True, blank=True)
     portfolio = models.URLField(max_length=255, null=True, blank=True)
+    static_resume_file = models.FileField(upload_to='portfolio/img/resume/static/', null=True, blank=True)
     banner_image = models.ImageField(upload_to='portfolio/img/person/banner_images/', null=True, blank=False)
     profile_image = models.ImageField(upload_to='portfolio/img/person/profile_images/', null=True, blank=False)
     hobbies = models.TextField(null=True, blank=True)
@@ -157,6 +147,7 @@ class Project(models.Model):
     tag_line = models.CharField(max_length=255, null=True, blank=True)
     categories = models.ManyToManyField(ProjectCategory)
     description = models.TextField(null=True, blank=True)
+    resume_des = models.TextField(null=True, blank=True)
     image_path = models.ImageField(upload_to='portfolio/img/project_images/', null=True, blank=True)
     github_link = models.URLField(max_length=255, null=True, blank=True)
     live_link = models.URLField(max_length=255, null=True, blank=True)
@@ -165,7 +156,7 @@ class Project(models.Model):
     is_featured = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
 
-    objects = ProjectManager() # Custom manager to handle null end dates
+    objects = CustomProjectOrder() # Custom ordering
 
     def __str__(self):
         return self.title or f"Project {self.id}"

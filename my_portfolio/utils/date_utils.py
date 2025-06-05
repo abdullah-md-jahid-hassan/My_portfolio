@@ -1,4 +1,5 @@
 #file: my_portfolio/utils/date_utils.py
+
 from datetime import date
 
 def duration(start_date, end_date):

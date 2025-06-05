@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     # User apps
     'landing_spot',
+    'resume',
     
     # Apps for Development
     "django_browser_reload",
@@ -148,4 +149,4 @@ AUTH_USER_MODEL = 'landing_spot.User'
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'my_portfolio', 'media')

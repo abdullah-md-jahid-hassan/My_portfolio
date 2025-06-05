@@ -6,48 +6,10 @@ from django.forms.widgets import RadioSelect
 from django import forms
 from .models import User, Skill, Project, Service, Contact, Education, Experience, Certification, ProjectCategory, SkillCategory
 
+# Import Custom Class
+from my_portfolio.utils.permission_utils import Restricted_if_not_supper
 
-# Restricted access for non-supper user
-class Restricted_if_not_supper:
-    # Superusers can select any user
-    # Staff users can only select themselves
-    def get_form(self, request, obj=None, **kwargs):
-        form = super().get_form(request, obj, **kwargs)
-        
-        if request.user.groups.filter(name='General Users').exists():
-            # Get the user field
-            if 'user' in form.base_fields:
-                user_field = form.base_fields['user']
-                user_field.queryset = user_field.queryset.filter(pk=request.user.pk)
-                user_field.initial = request.user.pk
-                
-        return form
-    
-
-    # Superusers see all user accounts.
-    # Normal users only see their own record.
-    def get_queryset(self, request):
-        qs = super().get_queryset(request)
-        if request.user.groups.filter(name='General Users').exists():
-            return qs.filter(pk=request.user.pk)
-        return qs
-    
-    # Allow user to edit their own profile only.
-    # Superusers can edit any record.
-    def has_change_permission(self, request, obj=None):
-        if obj is not None and request.user.groups.filter(name='General Users').exists():
-            return obj.pk == request.user.pk
-        return True
-    
-    # Allow user to delete their own profile only.
-    # Superusers can delete any record.
-    def has_delete_permission(self, request, obj=None):
-        if obj is not None and request.user.groups.filter(name='General Users').exists():
-            return obj.pk == request.user.pk
-        return True
-    
-    
-    
+# Import Custom Methods
 
 # Register your models here.
 
@@ -171,8 +133,8 @@ class ProjectAdminForm(forms.ModelForm):
 class ProjectAdmin(Restricted_if_not_supper, admin.ModelAdmin):
     form = ProjectAdminForm
     
-    list_display = ('title', 'display_categories', 'start_date', 'end_date', 'user')
-    list_filter = ('categories', 'user')
+    list_display = ( 'is_featured', 'title', 'display_categories', 'user')
+    list_filter = ('is_featured', 'categories', 'user')
     search_fields = ('title', 'description', 'user__id')
     filter_horizontal = ('categories',)
     date_hierarchy = 'end_date'
@@ -187,7 +149,7 @@ class ProjectAdmin(Restricted_if_not_supper, admin.ModelAdmin):
             'fields': ('user', 'title', 'tag_line', 'categories', 'is_featured')
         }),
         ('Details', {
-            'fields': ('description', 'image_path')
+            'fields': ('description', 'image_path', 'resume_des')
         }),
         ('Links', {
             'fields': ('github_link', 'live_link')

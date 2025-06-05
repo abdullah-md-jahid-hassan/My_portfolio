@@ -27,8 +27,11 @@ urlpatterns = [
     # Admin interface for managing the portfolio
     path('control/', admin.site.urls),
     
-    # Main portfolio application URLs
+    # landing_spot app URLs
     path('', include('landing_spot.urls')),
+    
+    # resume app URLs
+    path('resume/', include('resume.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
