@@ -27,9 +27,12 @@ A professional portfolio website built with Django to showcase skills, projects,
 |----------------|------------------------------------|
 | Frontend       | HTML5, CSS3, JavaScript, Bootstrap |
 | Backend        | Django, Python                     |
-| Database       | SQLite3                         |
+| Database       | SQLite3                            |
 | PDF Generation | WeasyPrint                         |
 | Versioning     | Git + GitHub                       |
+
+Frontend form: Frontend design form: https://bootstrapmade.com/folio-bootstrap-portfolio-template
+- Modified By Abdullah Md Jahid Hassan
 
 ---
 
