@@ -14,6 +14,7 @@ class Resume(models.Model):
     name = models.CharField(max_length=100)
     is_active = models.BooleanField(default=False)
     summary = models.TextField(null=True, blank=True)
+    # is_watermark = models.BooleanField(default=False)
 
 class ResumeProject(models.Model):
     resume = models.ForeignKey(Resume, on_delete=models.CASCADE, related_name='resume_projects')

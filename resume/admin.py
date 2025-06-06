@@ -23,6 +23,7 @@ class ResumeAdminForm(forms.ModelForm):
         fields = '__all__'
         widgets = {
             'is_active': forms.CheckboxInput(attrs={'class': 'toggle-switch'}),
+            # 'is_watermark': forms.CheckboxInput(attrs={'class': 'toggle-switch'}),
         }
 
     # Custom media for the admin form to include toggle switch CSS

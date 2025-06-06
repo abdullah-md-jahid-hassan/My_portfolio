@@ -217,7 +217,7 @@ class EducationAdmin(Restricted_if_not_supper, admin.ModelAdmin):
     readonly_fields = ('duration',)
     fieldsets = (
         (None, {
-            'fields': ('user', 'degree', 'institution', 'institution_logo', 'department', 'department_logo')
+            'fields': ('user', 'degree', 'institution', 'institution_logo', 'department', 'department_logo', 'resume_achi')
         }),
         ('Timeline', {
             'fields': ('start_date', 'end_date', 'duration')
@@ -235,7 +235,7 @@ class EducationAdmin(Restricted_if_not_supper, admin.ModelAdmin):
 # Registering the Experience model with the admin site
 @admin.register(Experience)
 class ExperienceAdmin(Restricted_if_not_supper, admin.ModelAdmin):
-    list_display = ('name', 'institution', 'start_date', 'end_date', 'user')
+    list_display = ('name', 'institution', 'type', 'duration', 'user')
     list_filter = ('institution', 'user')
     search_fields = ('name', 'institution', 'description', 'user__id')
     readonly_fields = ('duration',)
@@ -244,7 +244,7 @@ class ExperienceAdmin(Restricted_if_not_supper, admin.ModelAdmin):
             'fields': ('user', 'name', 'institution', 'address')
         }),
         ('Details', {
-            'fields': ('description',)
+            'fields': ('type', 'description', 'resume_des')
         }),
         ('Timeline', {
             'fields': ('start_date', 'end_date', 'duration')

@@ -247,6 +247,7 @@ class Education(models.Model):
     institution_logo = models.ImageField(upload_to='portfolio/img/education/institution_logo', null=True, blank=True)
     department = models.CharField(max_length=255, null=True, blank=True)
     department_logo = models.ImageField(upload_to='portfolio/img/education/department_logo', null=True, blank=True)
+    resume_achi = models.TextField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
     grade = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=False)
@@ -274,11 +275,19 @@ class Education(models.Model):
 # Experience model representing work experience.
 # This model can be used to store internships, jobs, etc.
 class Experience(models.Model):
+    type_choices = [
+        ('on_site', 'On-site'),
+        ('remote', 'Remote'),
+        ('hybrid', 'Hybrid'),
+    ]
+    
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, null=True, blank=False)  # Position name
+    type = models.CharField(max_length=20, choices=type_choices, default='on_site', null=True, blank=False)
     institution = models.CharField(max_length=255, null=True, blank=False)
     address = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
+    resume_des = models.TextField(null=True, blank=True)
     start_date = models.DateField(null=True, blank=False)
     end_date = models.DateField(null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiences')

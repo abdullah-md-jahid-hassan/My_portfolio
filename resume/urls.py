@@ -1,9 +1,7 @@
 from django.urls import path
-from . import views
+from .views import pdf_resume_view
 
-from django.conf import settings
-from django.conf.urls.static import static
-
+# URL patterns for the resume app
 urlpatterns = [
-    path('<str:username>/<str:action>/', views.pdf_resume_view, name='resume_pdf'),
+    path('<str:username>/<str:action>/', pdf_resume_view, name='pdf_resume'),
 ]
