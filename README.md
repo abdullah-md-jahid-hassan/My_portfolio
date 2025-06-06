@@ -3,10 +3,10 @@
 ![Portfolio](https://img.shields.io/badge/Project-Personal%20Portfolio-blue)
 ![Django](https://img.shields.io/badge/Framework-Django-green)
 ![Python](https://img.shields.io/badge/Language-Python-yellow)
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
+![SQLite3](https://img.shields.io/badge/Database-SQLite3-blue)
 ![Bootstrap](https://img.shields.io/badge/Frontend-Bootstrap-orange)
 
-A professional portfolio website built with Django to showcase skills, projects, education, and work experience. Features a responsive design with PDF resume generation and admin dashboard for easy content management.
+A professional portfolio website built with Django to showcase skills, projects, education, and work experience. Features a responsive design with PDF resume generation and an admin dashboard for easy content management.
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@ A professional portfolio website built with Django to showcase skills, projects,
 |----------------|------------------------------------|
 | Frontend       | HTML5, CSS3, JavaScript, Bootstrap |
 | Backend        | Django, Python                     |
-| Database       | PostgreSQL                         |
+| Database       | SQLite3                         |
 | PDF Generation | WeasyPrint                         |
 | Versioning     | Git + GitHub                       |
 
