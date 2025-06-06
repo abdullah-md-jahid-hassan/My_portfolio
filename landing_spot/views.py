@@ -1,4 +1,4 @@
-# File: portfolio/views.py
+# File: Landing_spot/views.py
 
 from django.shortcuts import render, redirect # Import render for rendering templates
 from django.http import HttpResponse # Import HttpResponse for returning responses
@@ -8,12 +8,9 @@ from .models import User, ProjectCategory, SkillCategory, Skill, Contact # Impor
 from django.contrib import messages # Import messages for user feedback
 from .forms import ContactForm # Import the ContactForm for handling contact messages
 
-# Create your views here.
-
-# This view function handles the portfolio page for a user.
-def landing_page_view(request):
+#local methods
+def landing_page(request, person):
     # User data 
-    person = User.objects.get(id=2)
     person.tag_items = person.tag_line.split(' | ')
     
     # Services of the user
@@ -76,6 +73,27 @@ def landing_page_view(request):
         }
     
     return render(request, 'intro.html', context)
+
+    
+    
+    
+# Create your views here.
+
+# view function for owner. Use root address.
+def owner_portfolio(request):
+    # User data 
+    person = User.objects.get(id=2)
+    
+    return landing_page(request, person)
+
+
+
+# view function for general user. root/portfolio/username.
+def other_portfolio(request, username):
+    # User data 
+    person = User.objects.get(username=username)
+    
+    return landing_page(request, person)
 
 
 

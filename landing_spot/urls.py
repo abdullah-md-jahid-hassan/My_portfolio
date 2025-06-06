@@ -5,7 +5,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.landing_page_view, name='landing_page'),
+    # URL patterns for the landing page for owner
+    path('', views.owner_portfolio, name='landing_page'),
+    
+    # URL patterns for the landing page for other users
+    path('portfolio/<str:username>', views.other_portfolio, name='landing_page'),
+    
+    # URL pattern for saving contact messages
     path('save-contact-message/', views.save_contact_message, name='save_contact_message'),
 ]
 
