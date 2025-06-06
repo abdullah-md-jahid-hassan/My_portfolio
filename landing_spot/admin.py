@@ -20,7 +20,7 @@ from my_portfolio.utils.permission_utils import Restricted_if_not_supper
 @admin.register(User)
 class UserAdmin(Restricted_if_not_supper, BaseUserAdmin):
     list_display = ('id', 'username', 'first_name', 'last_name', 'city', 'country')
-    search_fields = ('first_name', 'last_name', 'email', 'country', 'city')
+    search_fields = ('username', 'first_name', 'last_name', 'email', 'country', 'city')
     list_filter = ('country', 'city')
     readonly_fields = ('meta_keywords',)
 
