@@ -49,23 +49,23 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="#home" class="logo d-flex align-items-center">
+      <a href="{{previous_page}}#home" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        {% comment %} <img src="{% static "portfolio/img/favicon.png" %}" alt="Logo"> {% endcomment %}
         <h1 class="sitename">{{ person.last_name }}</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#educations">Educations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="{{previous_page}}#home">Home</a></li>
+          <li><a href="{{previous_page}}#about">About</a></li>
+          <li><a href="{{previous_page}}#skills">Skills</a></li>
+          <li><a href="{{previous_page}}#projects">Projects</a></li>
+          <li><a href="{{previous_page}}#experiences">Experiences</a></li>
+          <li><a href="{{previous_page}}#services">Services</a></li>
+          <li><a href="{{previous_page}}#certifications">Certifications</a></li>
+          <li><a href="{{previous_page}}#educations">Educations</a></li>
+          <li><a href="{{previous_page}}#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,16 +81,16 @@
   <!-- footer -->
   <footer id="footer" class="footer light-background">
     <div class="container">
-      <h3 class="sitename">{{ person.first_name }} {{ person.last_name}}</h3>
-      <p>{{ person.tag_line }}</p>
+      <h3 class="sitename">Portfolio</h3>
+      <p>Backend Development and Frontend Modifications by Abdullah Md Jahid Hassan</p>
       <div class="social-links d-flex justify-content-center">
-        <a target="_blank" href="{{ person.linkedin }}"><i class="bi bi-linkedin"></i></a>
-        <a target="_blank" href="{{ person.github }}"><i class="bi bi-github"></i></a>
-        <a target="_blank" href="{{ person.portfolio }}"><i class="bi bi-person-fill"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/abdullah-md-jahid-hassan-rqe"><i class="bi bi-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/abdullah-md-jahid-hassan"><i class="bi bi-github"></i></a>
+        <a target="_blank" href="/"><i class="bi bi-person-fill"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Folio</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           Front-end Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>

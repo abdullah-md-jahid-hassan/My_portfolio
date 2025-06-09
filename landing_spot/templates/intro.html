@@ -37,6 +37,10 @@
           <a class="button rounded-end" target="_blank" href="resume/{{person.username}}/download/"><i class="bi bi-download"></i></a>
         </div>
 
+        <div class="auto_generated">
+          <p>* Resume is auto generated</p>
+        </div>
+
       </div>
 
     </section><!-- /Hero Section -->
@@ -208,7 +212,7 @@
                       {% endfor %}
                     " class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     
-                    <a target="_blank" href="projects-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a target="_blank" href="/project/{{person.username}}/{{project.slug}}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
 
                     {% if project.github_link %}
                       <a target="_blank" href="{{project.github_link}}" title="GitHub Repository" class="github-link"><i class="fa-brands fa-github"></i></a>
@@ -494,7 +498,7 @@
         </div>
 
         <div id="contact_form" class="contact_form p-4 rounded shadow-sm">
-          <form action="{% url 'save_contact_message' %}" method="post" class="" style="" data-aos="fade-up" data-aos-delay="300">
+          <form action="/save_contact_message/{{person.username}}" method="post" data-aos="fade-up" data-aos-delay="300">
             {% csrf_token %}
             <div class="row gy-4">
 

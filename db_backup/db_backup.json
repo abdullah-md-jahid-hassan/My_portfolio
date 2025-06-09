@@ -1,0 +1,2703 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-06-03T11:23:10.406Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "the_boss@portfolio.com --> Supper User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Tag line\", \"Phone\", \"Banner image\", \"Profile image\", \"Country\", \"City\", \"Area\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-06-03T14:05:50.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "the_boss@portfolio.com --> Supper User",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-06-03T14:13:28.760Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-06-03T14:20:13.239Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Tag line\", \"Email address\", \"Phone\", \"Banner image\", \"Profile image\", \"Country\", \"City\", \"Area\", \"Location link\", \"Github\", \"Linkedin\", \"Portfolio\", \"About\", \"Hobbies\", \"Language\", \"Meta description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-06-03T14:20:44.324Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-06-03T14:35:37.334Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Staff",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-06-03T14:35:48.504Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Staff",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-06-03T14:35:59.618Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Staff",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-06-03T15:47:42.632Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-06-03T16:25:51.726Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-06-03T16:28:04.564Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-06-03T16:29:08.828Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-06-03T16:30:14.407Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-06-03T16:31:16.891Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-06-03T16:59:37.989Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "not seen from vfdfvf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-06-03T16:59:55.406Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "I can see from assdcscs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-06-03T17:00:41.727Z",
+    "user": 2,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "not seen edit from vfdfvf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Certification Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-06-03T18:03:16.594Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-06-03T18:03:41.897Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-06-03T18:09:48.630Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-06-03T18:11:07.186Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-06-03T18:11:45.684Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-06-03T19:22:56.315Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "abdullahmdjahidhassan@gmail.com --> Abdullah Md Jahid Hassan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-06-04T04:54:32.067Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "I can see from assdcscs",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-06-04T04:54:32.068Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "not seen edit from vfdfvf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-06-04T05:55:27.445Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "(BCSE) Bachelor of Computer Science and Engineering at IUBAT— International University of Business Agriculture and Technology",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-06-04T05:57:19.669Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Internship at Cyber Hundred",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-06-04T06:00:52.675Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Message from vdkfvbdv - xcZ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is seen\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-06-04T06:06:36.694Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Message from vdkfvbdv - xcZ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-06-04T06:06:36.694Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Message from kjvhdifvdvi - c c b ghngn",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-06-04T09:44:07.547Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-06-04T09:49:31.796Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "temp pri --> the_boss@portfolio.com --> Supper User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-06-04T09:55:13.559Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "24",
+    "object_repr": "temp project",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-06-04T09:55:30.813Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "temp pri --> the_boss@portfolio.com --> Supper User",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-06-04T17:15:14.390Z",
+    "user": 2,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Resume object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-06-04T17:15:44.288Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Resume object (1)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-06-04T21:36:41.119Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "General Users",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-06-05T04:10:31.576Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Resume object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (1)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (2)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (3)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-06-05T05:27:16.235Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "23",
+    "object_repr": "Personal Assets Management System",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"In resume\", \"Hierarchy\", \"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-06-05T05:27:56.466Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "22",
+    "object_repr": "Personal Portfolio Website",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"In resume\", \"Hierarchy\", \"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-06-05T05:28:05.841Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "23",
+    "object_repr": "Personal Assets Management System",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-06-05T05:30:31.791Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Internet Service Provider Management System",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"In resume\", \"Hierarchy\", \"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-06-05T05:33:53.074Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Thesis on LiFi Technology",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"In resume\", \"Hierarchy\", \"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-06-05T05:53:21.163Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "23",
+    "object_repr": "Personal Assets Management System",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"In resume\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-06-05T06:16:58.271Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Resume object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (1)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (2)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (3)\"}}, {\"added\": {\"name\": \"resume project\", \"object\": \"ResumeProject object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-06-05T06:21:02.034Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Resume object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-06-05T07:08:41.676Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Thesis on LiFi Technology",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-06-05T11:53:16.559Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "22",
+    "object_repr": "Personal Portfolio Website",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-06-05T12:12:28.548Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Internship at Cyber Hundred",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Resume des\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-06-05T12:18:13.256Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Internship at Cyber Hundred",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Type\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-06-05T15:32:40.626Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "(BCSE) Bachelor of Computer Science and Engineering at IUBAT— International University of Business Agriculture and Technology",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Resume achi\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-06-06T11:58:47.634Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Internship at Cyber Hundred",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Project Category",
+    "content_type": 6,
+    "codename": "add_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Project Category",
+    "content_type": 6,
+    "codename": "change_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Project Category",
+    "content_type": 6,
+    "codename": "delete_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Project Category",
+    "content_type": 6,
+    "codename": "view_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Skill Category",
+    "content_type": 7,
+    "codename": "add_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Skill Category",
+    "content_type": 7,
+    "codename": "change_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Skill Category",
+    "content_type": 7,
+    "codename": "delete_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Skill Category",
+    "content_type": 7,
+    "codename": "view_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add User Profile",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change User Profile",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete User Profile",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view User Profile",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Certification",
+    "content_type": 9,
+    "codename": "add_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Certification",
+    "content_type": 9,
+    "codename": "change_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Certification",
+    "content_type": 9,
+    "codename": "delete_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Certification",
+    "content_type": 9,
+    "codename": "view_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Contact Message",
+    "content_type": 10,
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Contact Message",
+    "content_type": 10,
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Contact Message",
+    "content_type": 10,
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Contact Message",
+    "content_type": 10,
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Education",
+    "content_type": 11,
+    "codename": "add_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Education",
+    "content_type": 11,
+    "codename": "change_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Education",
+    "content_type": 11,
+    "codename": "delete_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Education",
+    "content_type": 11,
+    "codename": "view_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Experience",
+    "content_type": 12,
+    "codename": "add_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Experience",
+    "content_type": 12,
+    "codename": "change_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Experience",
+    "content_type": 12,
+    "codename": "delete_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Experience",
+    "content_type": 12,
+    "codename": "view_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Project",
+    "content_type": 13,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Project",
+    "content_type": 13,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Project",
+    "content_type": 13,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Project",
+    "content_type": 13,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add Service",
+    "content_type": 14,
+    "codename": "add_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change Service",
+    "content_type": 14,
+    "codename": "change_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete Service",
+    "content_type": 14,
+    "codename": "delete_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view Service",
+    "content_type": 14,
+    "codename": "view_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Skill",
+    "content_type": 15,
+    "codename": "add_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Skill",
+    "content_type": 15,
+    "codename": "change_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Skill",
+    "content_type": 15,
+    "codename": "delete_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Skill",
+    "content_type": 15,
+    "codename": "view_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add resume",
+    "content_type": 16,
+    "codename": "add_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change resume",
+    "content_type": 16,
+    "codename": "change_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete resume",
+    "content_type": 16,
+    "codename": "delete_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view resume",
+    "content_type": 16,
+    "codename": "view_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add resume project",
+    "content_type": 17,
+    "codename": "add_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change resume project",
+    "content_type": 17,
+    "codename": "change_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete resume project",
+    "content_type": 17,
+    "codename": "delete_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view resume project",
+    "content_type": 17,
+    "codename": "view_resumeproject"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "General Users",
+    "permissions": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      21,
+      24,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      25,
+      28,
+      29,
+      30,
+      32,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ]
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "projectcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "skillcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "certification"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "contact"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "education"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "experience"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "project"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "service"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "skill"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "resume",
+    "model": "resume"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "resume",
+    "model": "resumeproject"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a3m1gkk9kmrs7qsynw6olml76xhacykv",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO1tndxADlSnFSIu0OkFNC-mXkvlmBbW9oGLmmq7MwkO_1uGcoD-w7qHfpt5mXu6zJlviv8oINf54rPy-H-HTQY7Vs7F4mKE0JGrUmXmJUQGgiCUKQVmiCttBRqMWANIlgQPqAx5KPKHtn7A9EbN6M:1uN3rx:vqu4cBtHMFNN29RxY1lXYx6r7Ne8It2b_oQqXkek3YI",
+    "expire_date": "2025-06-19T06:14:29.240Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xce1fjpku9bo75nmdnfwmxher36bgwbk",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAChaEu3XsGMsMwUjVtUtqV8e7apAvd_vfef6mE21rT1sqSRlZnZdXpdyPMjzLtgO843Wad52ldRtK7og_a9HXm8rwc7t9BxVa_tbO9GZCwB7RGOiMEbkAk8Dl7B6F4JxJ7X2LMbJ0QSRCAAMwcukDq_QHpczht:1uMW5G:F4JvBZod8N7E47PwuuAwKQx0uqlQP7d1tAT4RE6QB8g",
+    "expire_date": "2025-06-17T18:09:58.249Z"
+  }
+},
+{
+  "model": "landing_spot.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ps2rfhpN8ynNIoCApoS6O9$R9BILFMBeTNksnsPZH02VGrbuY+HVYhRCydXt30ecCc=",
+    "last_login": "2025-06-05T06:14:29.233Z",
+    "is_superuser": true,
+    "username": "i_am_the_boss_here",
+    "first_name": "Supper",
+    "last_name": "User",
+    "email": "the_boss@portfolio.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-03T11:16:24.539Z",
+    "tag_line": "I'm The Boss Here",
+    "phone": "000000000",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "area": "Uttara 10",
+    "location_link": null,
+    "about": "",
+    "github": null,
+    "linkedin": null,
+    "portfolio": null,
+    "static_resume_file": "",
+    "banner_image": "portfolio/img/person/banner_images/Screenshot_2025-03-20_222913.png",
+    "profile_image": "portfolio/img/person/profile_images/Screenshot_2025-03-20_222913.png",
+    "hobbies": "",
+    "language": null,
+    "meta_description": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "landing_spot.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$crlZZLwiptIa5qsh3UyDp2$GOMlMbSwH8RoH8OJxOdZBitM0N/idADE0HDTPGqp8dw=",
+    "last_login": "2025-06-05T06:13:38.440Z",
+    "is_superuser": false,
+    "username": "Abdullah_Md_Jahid_Hassan",
+    "first_name": "Abdullah Md",
+    "last_name": "Jahid Hassan",
+    "email": "abdullahmdjahidhassan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-03T14:13:27Z",
+    "tag_line": "Backend Developer | Web Developer | CSE Graduate",
+    "phone": "+8801756254873",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "area": "Uttara 10",
+    "location_link": "https://maps.app.goo.gl/TYADuQCwJoLGSdFR7",
+    "about": "Hello! I’m Hassan, a passionate Python-Django Backend Developer with a knack for turning ideas into scalable, efficient systems. My journey in tech blends hardware tinkering (thanks to my love for electronics!) with software craftsmanship—whether it’s building web APIs or innovating data transmission methods like Li-Fi using RGB light.\r\n\r\nWhat I Do\r\n💻 Backend Development: Craft robust APIs and databases with Python, Django, and MySQL.\r\n\r\n🔌 Hardware Hacks: Experiment with Arduino, sensors, and IoT projects (like my thesis on parallel Li-Fi data transmission).\r\n\r\n🌐 Problem-Solver: From ISP management systems to optimizing data transfer rates, I thrive on challenges.\r\n\r\nMy Journey\r\nA Computer Science graduate (B.Sc, CGPA: 3.42), I’ve balanced academia with hands-on projects—like developing a PHP/MySQL ISP Management System and pushing boundaries in Li-Fi research. Now, I’m focused on mastering Django REST Framework and cloud technologies to build even faster, smarter backends.\r\n\r\nBeyond Code\r\nWhen I’m not debugging, you’ll find me:\r\n\r\n🎨 Sketching or crafting (a holdover from my art school days!).\r\n\r\n🎤 Public speaking—I love sharing tech insights.\r\n\r\n🤖 Building robots (because why not?).\r\n\r\nLet’s connect! I’m always open to collaborations or chats about tech, innovation, or your next big idea.",
+    "github": "https://github.com/abdullah-md-jahid-hassan",
+    "linkedin": "https://www.linkedin.com/in/abdullah-md-jahid-hassan-rqe",
+    "portfolio": "https://www.amjh.space/",
+    "static_resume_file": "",
+    "banner_image": "portfolio/img/person/banner_images/DSC_1543_2.jpg",
+    "profile_image": "portfolio/img/person/profile_images/PP.jpg",
+    "hobbies": "Problem-solving, Crafting, Electronics.",
+    "language": "Bangla, English, Hindi",
+    "meta_description": "Abdullah Md Jahid Hassan – A Python-Django backend developer passionate about scalable web solutions, with experience in software engineering, electronics, and Li-Fi research. View my projects, thesis, and internship highlights.",
+    "groups": [
+      2
+    ],
+    "user_permissions": [
+      17,
+      18,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 10,
+  "fields": {
+    "name": "Frontend Development",
+    "slug": "frontend-development"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 11,
+  "fields": {
+    "name": "Backend Development",
+    "slug": "backend-development"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 12,
+  "fields": {
+    "name": "Database",
+    "slug": "database"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 13,
+  "fields": {
+    "name": "Version Control",
+    "slug": "version-control"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 14,
+  "fields": {
+    "name": "Hardware & Embedded Systems",
+    "slug": "hardware-embedded-systems"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 15,
+  "fields": {
+    "name": "Networking",
+    "slug": "networking"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 16,
+  "fields": {
+    "name": "Tools",
+    "slug": "tools"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 17,
+  "fields": {
+    "name": "Soft Skills",
+    "slug": "soft-skills"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 18,
+  "fields": {
+    "name": "Programing Languages",
+    "slug": "programing-languages"
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 17,
+  "fields": {
+    "name": "Python",
+    "percentage": 85,
+    "category": 18,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 18,
+  "fields": {
+    "name": "Django",
+    "percentage": 95,
+    "category": 11,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 19,
+  "fields": {
+    "name": "REST",
+    "percentage": 80,
+    "category": 11,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 20,
+  "fields": {
+    "name": "PHP",
+    "percentage": 95,
+    "category": 11,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 22,
+  "fields": {
+    "name": "CSS",
+    "percentage": 85,
+    "category": 10,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 23,
+  "fields": {
+    "name": "JavaScript",
+    "percentage": 85,
+    "category": 10,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 24,
+  "fields": {
+    "name": "Bootstrap",
+    "percentage": 95,
+    "category": 10,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 25,
+  "fields": {
+    "name": "MySQL",
+    "percentage": 90,
+    "category": 12,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 26,
+  "fields": {
+    "name": "SQL Queries",
+    "percentage": 90,
+    "category": 12,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 27,
+  "fields": {
+    "name": "Git",
+    "percentage": 95,
+    "category": 16,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 28,
+  "fields": {
+    "name": "GitHub",
+    "percentage": 90,
+    "category": 16,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 29,
+  "fields": {
+    "name": "Arduino",
+    "percentage": 95,
+    "category": 14,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 30,
+  "fields": {
+    "name": "Sensors",
+    "percentage": 90,
+    "category": 14,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 31,
+  "fields": {
+    "name": "Li-Fi Technology",
+    "percentage": 95,
+    "category": 15,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 32,
+  "fields": {
+    "name": "Parallel Data Transmission",
+    "percentage": 85,
+    "category": 15,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 33,
+  "fields": {
+    "name": "VS Code",
+    "percentage": 95,
+    "category": 16,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 34,
+  "fields": {
+    "name": "PyCharm",
+    "percentage": 85,
+    "category": 16,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 35,
+  "fields": {
+    "name": "Microsoft Office",
+    "percentage": 95,
+    "category": 16,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 43,
+  "fields": {
+    "name": "C",
+    "percentage": 90,
+    "category": 18,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 44,
+  "fields": {
+    "name": "C++",
+    "percentage": 95,
+    "category": 18,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 45,
+  "fields": {
+    "name": "C#",
+    "percentage": 60,
+    "category": 18,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.skill",
+  "pk": 46,
+  "fields": {
+    "name": "Java",
+    "percentage": 60,
+    "category": 18,
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 1,
+  "fields": {
+    "name": "PHP",
+    "slug": "php"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Python-Django",
+    "slug": "python-django"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 4,
+  "fields": {
+    "name": "C++",
+    "slug": "c++"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 5,
+  "fields": {
+    "name": "JavaScript",
+    "slug": "javascript"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 6,
+  "fields": {
+    "name": "HTML/CSS",
+    "slug": "html/css"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 7,
+  "fields": {
+    "name": "C#",
+    "slug": "csharp"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 8,
+  "fields": {
+    "name": "React",
+    "slug": "react"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 9,
+  "fields": {
+    "name": "Node",
+    "slug": "node"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 10,
+  "fields": {
+    "name": "Flutter",
+    "slug": "flutter"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 11,
+  "fields": {
+    "name": "JAVA",
+    "slug": "java"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 12,
+  "fields": {
+    "name": "Electronics",
+    "slug": "electronics"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 13,
+  "fields": {
+    "name": "Arduino",
+    "slug": "arduino"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 14,
+  "fields": {
+    "name": "Academic",
+    "slug": "academic"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 15,
+  "fields": {
+    "name": "MySQL",
+    "slug": "mysql"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 16,
+  "fields": {
+    "name": "Other",
+    "slug": "other"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 17,
+  "fields": {
+    "name": "Bootstrap",
+    "slug": "bootstrap"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 18,
+  "fields": {
+    "name": "ESP-866",
+    "slug": "esp-866"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 19,
+  "fields": {
+    "name": "SQL lite",
+    "slug": "sql-lite"
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 1,
+  "fields": {
+    "title": "Internet Service Provider Management System",
+    "tag_line": "Web-based ISP management system with role-based access and payment tracking.",
+    "description": "🛜 Project Name: Internet Service Provider Management System\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Internet-Service-Provider\r\n\r\n\r\n🔗 Live On:\r\nhttps://www.isp.amjh.space\r\n\r\n\r\n🔎 Overview:\r\nThis project is a powerful web-based platform designed to streamline operations for ISPs. From managing customers and employees to handling payments and service assignments, this system acts as a central hub for all administrative activities. Built with PHP, MySQL, and Bootstrap, the interface is both responsive and user-friendly.\r\n\r\n\r\n✨ Highlights:\r\n- Role-based login system for admins, employees, and customers\r\n- Dashboard overview for critical ISP metrics\r\n- Customer and employee record management\r\n- Payment tracking with invoice generation\r\n- Task assignment and service tracking\r\n- Mobile-friendly UI\r\n\r\n\r\n🧰 Tools & Technologies:\r\n- PHP (Backend)\r\n- MySQL (Database)\r\n- Bootstrap 5 (UI Framework)\r\n- Git + GitHub",
+    "resume_des": "Front-end: HTML, CSS, Bootstrap 5  \r\nBack-end: PHP  \r\nDatabase: MySQL",
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-12_160746.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Internet-Service-Provider",
+    "live_link": "https://isp.amjh.space",
+    "start_date": "2024-01-07",
+    "end_date": "2024-07-17",
+    "is_featured": true,
+    "user": 2,
+    "categories": [
+      1,
+      5,
+      6,
+      15,
+      17
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 2,
+  "fields": {
+    "title": "Shopping Cart",
+    "tag_line": "Responsive web-based shopping cart with dynamic product management.",
+    "description": "💼 Project Name: Shopping Cart\r\n\r\n🔗 GitHub Repository:  \r\nhttps://github.com/abdullah-md-jahid-hassan/Shopping-Cart\r\n\r\n🔎 Overview:  \r\nThis project is a simple and responsive web-based shopping cart application that allows users to browse products and manage their shopping cart efficiently. The application, built using HTML5, CSS3, and JavaScript (ES6), offers a seamless user experience across various devices.\r\n\r\n✨ Highlights:\r\n- Product listing with images, descriptions, and prices.\r\n- Add to cart and remove from cart functionalities.\r\n- Cart overview displaying selected products and total price.\r\n- Responsive design for optimal viewing on different devices.\r\n\r\n🧰 Tools & Technologies:\r\n- HTML\r\n- CSS\r\n- JavaScript",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-18_131429.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Shopping-Cart",
+    "live_link": "",
+    "start_date": "2025-03-12",
+    "end_date": "2025-03-13",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 3,
+  "fields": {
+    "title": "To-Do List",
+    "tag_line": "Responsive web-based To-Do List for task management.",
+    "description": "💼 Project Name: To-Do List\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/To-Do-List\r\n\r\n🔎 Overview:\r\nThis project is a minimalist and responsive web-based To-Do List application that allows users to manage their daily tasks efficiently. The application, built using HTML5, CSS3, and JavaScript (ES6), offers a seamless user experience across various devices.\r\n\r\n✨ Highlights:\r\n- Add, complete, and delete tasks with ease.\r\n- Clear overview of pending and completed tasks.\r\n- Responsive design for optimal viewing on different devices.\r\n\r\n🧰 Tools & Technologies:\r\n- HTML5\r\n- CSS3\r\n- JavaScript",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-18_123529.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/To-Do-List",
+    "live_link": "",
+    "start_date": "2025-01-16",
+    "end_date": "2025-01-16",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 4,
+  "fields": {
+    "title": "Product Description Page",
+    "tag_line": "Responsive product detail page with specs, images, and pricing.",
+    "description": "💼 Project Name: Product Description Page\r\n\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/Product-Description-Page\r\n\r\n\r\n🔎 Overview:\r\n This project is a clean and responsive product description page that provides detailed information about a product, including images, specifications, and pricing. Built using HTML5 and CSS3, the page is optimized for various devices and screen sizes.\r\n\r\n\r\n✨ Highlights:\r\nComprehensive product details with specifications.\r\nHigh-quality image gallery showcasing the product.\r\nClear display of pricing information.\r\nResponsive design ensures compatibility across devices.\r\n🧰 Tools & Technologies:\r\nHTML\r\nCSS",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_133759.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Product-Description-Page",
+    "live_link": "",
+    "start_date": "2025-03-06",
+    "end_date": "2025-03-06",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 5,
+  "fields": {
+    "title": "ESP8266 All-in-One",
+    "tag_line": "ESP8266-based IoT project with web control and real-time monitoring.",
+    "description": "💡 Project Name: ESP8266 All-in-One Project\r\n\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/Esp8266_all_in_one\r\n\r\n\r\n🔎 Overview:\r\n This project presents an integrated IoT solution utilizing the ESP8266 microcontroller to manage multiple functionalities through a web-based interface. It allows users to control and monitor connected devices remotely via a user-friendly web page.\r\n\r\n\r\n✨ Highlights:\r\n- Web interface for real-time device control and monitoring.\r\n- Wi-Fi connectivity for remote access.\r\n- Modular codebase facilitating easy scalability.\r\n- Real-time data display from connected sensors.\r\n\r\n\r\n🧰 Tools & Technologies:\r\n- ESP8266 Microcontroller\r\n- C++ Programming Language\r\n- HTML for Web Interface",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_170640.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Esp8266_all_in_one",
+    "live_link": "",
+    "start_date": "2024-07-10",
+    "end_date": "2024-10-09",
+    "is_featured": true,
+    "user": 2,
+    "categories": [
+      4,
+      6,
+      12,
+      13,
+      18
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 6,
+  "fields": {
+    "title": "Thesis on LiFi Technology",
+    "tag_line": "Research and prototype development of high-speed LiFi wireless communication.",
+    "description": "💼 Project Name: Thesis on LiFi Technology\r\n\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/Thesis-on-LiFi\r\n\r\n\r\n🔎 Overview:\r\n This project is an in-depth research endeavor focusing on the implementation and potential of LiFi (Light Fidelity) technology for high-speed wireless communication using light waves. The study encompasses a comprehensive analysis of LiFi's advantages, challenges, and practical applications.\r\n\r\n\r\n✨ Highlights:\r\n- Detailed exploration of LiFi technology and its comparison with traditional wireless communication methods.\r\n- Development of a basic LiFi communication prototype using C++.\r\n- Performance evaluation under various environmental conditions.\r\n- Thorough documentation of research methodologies and findings.\r\n\r\n\r\n🧰 Tools & Technologies:\r\n- C++ Programming Language\r\n- Arduino UNO\r\n- RGB LED Module\r\n- RGB Color Sensor\r\n- LDR (Light Dependent Resistor)\r\n- IR LED and Photodiode\r\n- Breadboard and Jumper Wires",
+    "resume_des": "Hardware: Arduino UNO, RGB LED Module, RGB Color Sensor, LDR, Photodiode  \r\nProgramming Language: C++  \r\nTools: Arduino IDE",
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-12_164426.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Thesis-on-LiFi",
+    "live_link": null,
+    "start_date": "2023-01-05",
+    "end_date": "2023-12-29",
+    "is_featured": true,
+    "user": 2,
+    "categories": [
+      4,
+      12,
+      13
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 7,
+  "fields": {
+    "title": "Resume Template",
+    "tag_line": "Clean, responsive HTML resume template for professional profiles.",
+    "description": "📜 Project Name: Resume Template\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/Resume_Template\r\n\r\n🔎 Overview:\r\n This project is a clean and responsive resume template built with HTML, designed to showcase professional experience, education, and skills effectively. It provides a structured layout that is easily customized according to individual preferences.\r\n\r\n✨ Highlights:\r\n- Responsive design ensures optimal viewing on various devices.\r\n- Clearly defined sections for personal information, education, experience, and skills.\r\n- Easy customization to align with personal branding.\r\n\r\n🧰 Tools & Technologies:\r\n- HTML",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_183714.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Resume_Template",
+    "live_link": "",
+    "start_date": "2024-07-04",
+    "end_date": "2024-07-05",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 8,
+  "fields": {
+    "title": "C++ Compiler Simulation",
+    "tag_line": "Educational C++ compiler simulation demonstrating compilation phases.",
+    "description": "⚙️ Project Name: C++ Compiler Simulation\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/c-_compiler\r\n\r\n🔎 Overview:\r\n This project is a simplified C++ compiler simulation that demonstrates the fundamental phases of compilation, including lexical analysis, syntax analysis, and code generation. It serves as an educational tool to understand how compilers process source code.\r\n\r\n✨ Highlights:\r\n- Implements lexical analysis to tokenize input source code.\r\n- Performs syntax analysis using defined grammar rules.\r\n- Generates intermediate code representations.\r\n- Utilizes a customizable grammar file for parsing rules.\r\n\r\n🧰 Tools & Technologies:\r\n- C++ Programming Language",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/maxresdefault.webp",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/c-_compiler",
+    "live_link": "",
+    "start_date": "2023-06-04",
+    "end_date": "2023-06-21",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 9,
+  "fields": {
+    "title": "Inflation Effect Calculator",
+    "tag_line": "CLI tool to calculate how inflation affects money’s future value.",
+    "description": "💰 Project Name: Inflation Effect Calculator\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/inflation_effect_calculator\r\n\r\n🔎 Overview:\r\n This project is a command-line tool developed in C++ to calculate the impact of inflation on the purchasing power of money over time. It allows users to input an initial amount, an annual inflation rate, and a period to determine the adjusted value of money after the specified duration.\r\n\r\n✨ Highlights:\r\n- Accepts user input for amount, inflation rate, and period.\r\n- Calculates the future value of money considering the inflation rate.\r\n- Provides a simple and efficient way to understand the effects of inflation.\r\n\r\n🧰 Tools & Technologies:\r\n- C++ Programming Language",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_192553.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/inflation_effect_calculator",
+    "live_link": "",
+    "start_date": "2021-04-05",
+    "end_date": "2021-04-05",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 10,
+  "fields": {
+    "title": "Ticket Vending Machine",
+    "tag_line": "Command-line-based ticket vending machine simulation in C++.",
+    "description": "🎟️ Project Name: Ticket Vending Machine\r\n\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/Ticket_vending_machine\r\n\r\n\r\n🔎 Overview:\r\n This project is a command-line-based ticket vending machine simulation developed in C++. It allows users to select destinations, choose the number of tickets, process payments, and receive a transaction summary. The program demonstrates fundamental programming concepts such as user input handling, conditional statements, and basic arithmetic operations.\r\n\r\n\r\n✨ Highlights:\r\n- Enables users to select from predefined destinations.\r\n- Allows selection of ticket quantity.\r\n- Calculates total cost and processes payment.\r\n- Generates a transaction summary and receipt.\r\n\r\n🧰 Tools & Technologies:\r\n- C++ Programming Language",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_194825.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Ticket_vending_machine",
+    "live_link": "",
+    "start_date": "2022-06-12",
+    "end_date": "2022-06-12",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 11,
+  "fields": {
+    "title": "City Night 2D Animation",
+    "tag_line": "2D city night scene animation with dynamic lights and motion.",
+    "description": "🌃 Project Name: City Night 2D Animation\r\n\r\n🔗 GitHub Repository:\r\n https://github.com/abdullah-md-jahid-hassan/city_night_2d_animation\r\n\r\n\r\n🔎 Overview:\r\n This project is a 2D animation simulating a serene city night scene, developed in C++ using graphics libraries. The animation features dynamic elements such as moving vehicles, twinkling stars, and illuminated buildings, creating a realistic nighttime urban environment.\r\n\r\n\r\n✨ Highlights:\r\n- Animated vehicles moving along roads.\r\n- Twinkling stars and glowing building lights.\r\n- (If applicable, describe any user controls or interactions.)\r\n- Seamless transitions and movements for a realistic experience.\r\n\r\n\r\n🧰 Tools & Technologies:\r\n- C++ Programming Language\r\n- (Specify the graphics libraries used, e.g., OpenGL, SDL, or any custom libraries.)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_201033.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/city_night_2d_animation",
+    "live_link": "",
+    "start_date": "2023-05-07",
+    "end_date": "2023-05-28",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 12,
+  "fields": {
+    "title": "Flag of Honduras – 2D Animation",
+    "tag_line": "2D animated simulation of the Honduras national flag using OpenGL.",
+    "description": "🏳️ Project Name: Flag of Honduras – 2D Animation\r\n\r\n🔗 GitHub Repository:  \r\nhttps://github.com/abdullah-md-jahid-hassan/flag_of_honduras_2d_animation\r\n\r\n🔎 Overview:  \r\nThis project visually simulates the national flag of Honduras using 2D computer graphics techniques. Implemented in C++ with OpenGL, it focuses on rendering and animating the flag with accurate proportions and symbolic design. The project serves as a strong foundation for understanding basic rendering, transformation, and color manipulation in OpenGL.\r\n\r\n✨ Highlights:  \r\n1. Accurate representation of the Honduras flag with stars and stripes  \r\n2. Animation logic that simulates waving or a dynamic display  \r\n3. Clean modular structure using header and source files  \r\n4. Designed to work seamlessly with Code::Blocks IDE  \r\n5. Great for beginners in OpenGL graphics programming  \r\n\r\n🧰 Tools & Technologies:  \r\n- C++  \r\n- OpenGL  \r\n- Code::Blocks  \r\n- Git + GitHub",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/HOND0001__26827.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/flag_of_honduras_2d_animation",
+    "live_link": "",
+    "start_date": "2022-07-17",
+    "end_date": "2022-07-30",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 13,
+  "fields": {
+    "title": "Hospital Management System",
+    "tag_line": "Modular hospital database schema with ERD and SQL setup scripts.",
+    "description": "💼 Project Name: Hospital Management System\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Hospital_management_system\r\n\r\n🔎 Overview:\r\nA well-structured database schema is designed for managing hospital operations, including patient records, doctor information, appointments, treatments, and billing. The project provides an Entity-Relationship Diagram (ERD) and SQL scripts to set up and manage the database efficiently.\r\n\r\n✨ Highlights:\r\n1. Covers all major hospital management modules using normalized tables\r\n2. Visual ERD file included to explain relationships between entities\r\n3. SQL file to quickly set up the database schema\r\n4. Modular and extendable schema for frontend integration\r\n5. Lightweight and easy to deploy in any DBMS that supports SQL\r\n\r\n🧰 Tools & Technologies:\r\n- MySQL / PostgreSQL\r\n- SQL\r\n- ERD Tools",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-19_205641.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Hospital_management_system",
+    "live_link": "",
+    "start_date": "2025-02-13",
+    "end_date": "2025-02-17",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      15
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 14,
+  "fields": {
+    "title": "Contact Manager",
+    "tag_line": "CLI contact manager with CSV storage in Python.",
+    "description": "💼 Project Name: Contact Manager\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Contact_manager\r\n\r\n🔎 Overview:\r\nA command-line application developed in Python to manage personal contacts. It provides functionalities to add, view, search, and delete contacts, with data stored in a CSV file for persistence. The project emphasizes simplicity and ease of use, making it suitable for beginners and those looking to understand file handling in Python.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Efficient management of contact information.\r\n- Persistent storage using CSV files.\r\n- Modular code structure for maintainability.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- CSV\r\n- Command-Line Interface (CLI)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_005834.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Contact_manager",
+    "live_link": "",
+    "start_date": "2025-01-10",
+    "end_date": "2025-01-10",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 15,
+  "fields": {
+    "title": "Library Management System v1",
+    "tag_line": "Basic CLI library manager with CSV book storage in Python.",
+    "description": "💼 Project Name: Library Management System v1\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Library_management_system_v1\r\n\r\n🔎 Overview:\r\nA command-line application developed in Python to manage a library's book records. It provides functionalities to add and view books, with data stored in a CSV file for persistence. The project emphasizes simplicity and ease of use, making it suitable for beginners and those looking to understand file handling in Python.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Efficient management of book information.\r\n- Persistent storage using CSV files.\r\n- Modular code structure for maintainability.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- CSV\r\n- Command-Line Interface (CLI)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_012050.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Library_management_system_v1",
+    "live_link": "",
+    "start_date": "2025-02-13",
+    "end_date": "2025-02-13",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 16,
+  "fields": {
+    "title": "Library Management System v2",
+    "tag_line": "Command-line library manager with CSV-based book tracking in Python.",
+    "description": "💼 Project Name: Library Management System v2\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Library_management_system_v2\r\n\r\n🔎 Overview:\r\nAn enhanced command-line application developed in Python manages library book records. It provides functionalities to add, view, update, and delete books, with data stored in a CSV file for persistence. The project emphasizes modularity and ease of use, making it suitable for beginners and those looking to understand file handling in Python.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Efficient management of book information.\r\n- Persistent storage using CSV files.\r\n- Modular code structure for maintainability.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- CSV\r\n- Command-Line Interface (CLI)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_012955.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Library_management_system_v2",
+    "live_link": "",
+    "start_date": "2025-03-12",
+    "end_date": "2025-03-13",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 17,
+  "fields": {
+    "title": "Banking Management System",
+    "tag_line": "CLI-based banking system with CSV data storage in Python.",
+    "description": "💼 Project Name: Banking Management System\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Banking_management_system\r\n\r\n🔎 Overview:\r\nA command-line application developed in Python to manage banking operations. It provides functionalities to create accounts, deposit and withdraw funds, check balances, and manage account information, with data stored in a CSV file for persistence. The project emphasizes simplicity and ease of use, making it suitable for beginners and those looking to understand file handling in Python.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Efficient management of customer accounts.\r\n- Persistent storage using CSV files.\r\n- Modular code structure for maintainability.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- CSV\r\n- Command-Line Interface (CLI)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_014000.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Banking_management_system",
+    "live_link": "",
+    "start_date": "2025-02-20",
+    "end_date": "2025-02-20",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 18,
+  "fields": {
+    "title": "Basic Calculator",
+    "tag_line": "CLI-based basic calculator with error handling in Python.",
+    "description": "💼 Project Name: Basic Calculator\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Basic_calculator\r\n\r\n🔎 Overview:\r\nA command-line application developed in Python to perform basic arithmetic operations. It provides functionalities to add, subtract, multiply, and divide two numbers, with error handling for invalid inputs and division by zero. The project emphasizes simplicity and ease of use, making it suitable for beginners and those looking to understand basic Python programming concepts.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Performs basic arithmetic operations.\r\n- Error handling for invalid inputs and division by zero.\r\n- Continuous operation without restarting the application.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- Command-Line Interface (CLI)",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_014424.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Basic_calculator",
+    "live_link": "",
+    "start_date": "2025-01-03",
+    "end_date": "2025-01-03",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 19,
+  "fields": {
+    "title": "Favorite Foods Manager",
+    "tag_line": "CLI tool to manage and track favourite foods with text file storage.",
+    "description": "🍽️ Project Name: Favourite Foods Manager\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Favourite_foods_manager\r\n\r\n🔎 Overview:\r\nA command-line application developed in Python to manage your list of favourite foods. This simple tool allows users to add, view, and remove food items from their favourites list, providing a straightforward way to keep track of preferred dishes.\r\n\r\n✨ Highlights:\r\n- User-friendly command-line interface.\r\n- Add, view, and remove favourite foods.\r\n- Persistent storage using a text file.\r\n- Lightweight and easy to use.\r\n\r\n🧰 Tools & Technologies:\r\n- Python\r\n- Command-Line Interface (CLI)\r\n- Text File for Data Storagemoving a food item from the favourites list.",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-20_015226.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Favourite_foods_manager",
+    "live_link": "",
+    "start_date": "2025-01-02",
+    "end_date": "2025-01-02",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      2
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 20,
+  "fields": {
+    "title": "Variable Step-Down Power Supply (1.3V–19.1V, 5A Max)",
+    "tag_line": "1.3V–19.1V step-down power supply with 5A output capacity.",
+    "description": "🔋 Project Name: Variable Step-Down Power Supply (1.3V–19.1V, 5A Max)\r\n\r\n🔎 Overview:\r\nDesigned a variable step-down DC power supply using a 19V, 3.25A laptop adapter as the primary source\r\nIntegrated an XL4015 buck converter module to regulate voltage output between 1.3V and 19.1V\r\nEquipped with a Schottky diode for reverse polarity protection and safe operation\r\nIdeal for powering development boards, sensors, and circuits during prototyping and testing\r\n\r\n✨ Highlights:\r\n- Output voltage range: 1.3V to 19.1V\r\n- Current capacity: Up to 5A based on the module's capability\r\n- Efficient voltage regulation using the XL4015 converter\r\n- Reliable and compact design with heat dissipation support\r\n- Suitable for electronics labs, DIY projects, and test benches\r\n\r\n🧰 Tools & Technologies:\r\n- XL4015 DC-DC Buck Converter Module\r\n- Schottky Diode for reverse protection\r\n- 19V 3.25A Laptop Power Adapter\r\n- Standard DC Barrel Connector\r\n- Testing tools: Heat sink, multimeter, load tester",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/20250520_140042.jpg",
+    "github_link": "",
+    "live_link": "",
+    "start_date": "2025-02-13",
+    "end_date": "2025-02-15",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      12
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 21,
+  "fields": {
+    "title": "12V Li-ion Battery Pack (3S4P, 18650 Cells)",
+    "tag_line": "12V 3S4P Li-ion battery pack with BMS and voltage display.",
+    "description": "🔋 Project Name: 12V Li-ion Battery Pack (3S4P, 18650 Cells)\r\n\r\n🔎 Overview:\r\nBuilt a 12V rechargeable Li-ion battery pack using twelve 18650 cells configured in a 3S4P arrangement.\r\nIntegrated with a 40A BMS (Battery Management System) for overcharge, over-discharge, and short-circuit protection.\r\nFeatures a digital voltage meter with a push-button trigger for on-demand voltage display, and dual female DC connectors for safe input/output handling.\r\nIdeal for powering portable electronics, DIY robotics, and off-grid devices.\r\n\r\n✨ Highlights:\r\n- Configuration: 3S4P (12x 18650 cells)\r\n- Total output: ~12.6V fully charged, ~11.1V nominal\r\n- Integrated 40A BMS for safe charging/discharging\r\n- Onboard push-button voltmeter for live monitoring\r\n- Dual DC jacks: separate ports for input charging and output load\r\n- Compact and enclosed with a handmade custom case\r\n\r\n🧰 Tools & Technologies:\r\n- 18650 Li-ion Batteries (3.7V, 2600mAh typical)\r\n- 3S 40A BMS Module\r\n- Digital Voltmeter Module with Push Button\r\n- DC Barrel Connectors (female)\r\n- Soldering Tools, Multimeter, Hot Glue, Custom Enclosure Materials",
+    "resume_des": null,
+    "image_path": "portfolio/img/project_images/20250520_140339.jpg",
+    "github_link": "",
+    "live_link": "",
+    "start_date": "2025-05-10",
+    "end_date": "2025-05-13",
+    "is_featured": false,
+    "user": 2,
+    "categories": [
+      12
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 22,
+  "fields": {
+    "title": "Personal Portfolio Website",
+    "tag_line": "Dynamic personal portfolio with admin panel for showcasing skills, projects, and achievements.",
+    "description": "👨‍💼 Project Name: Personal Portfolio Website\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/my_portfolio\r\n\r\n🔗 Live On:\r\nhttps://www.amjh.space\r\n\r\n🔎 Overview:\r\nThis project is a clean and professional personal portfolio website built with Python Django. It enables you to present your personal details, skills, services, education, experience, projects, achievements, and contact information in a structured and organized manner. With an integrated admin panel, you can update content dynamically without editing code.\r\n\r\n✨ Highlights:\r\n1. Full-stack PHP application with backend content management\r\n2. Organized sections for skills, projects, achievements, and contact\r\n3. Admin panel to add or edit portfolio items in real-time\r\n4. Responsive UI built using Bootstrap 5\r\n5. Integrated contact form with email notifications\r\n\r\n🧰 Tools & Technologies:\r\n- Python-Django(Backend)\r\n- SQLite(Database)\r\n- HTML/CSS\r\n- JavaScript\r\n- Bootstrap 5 (UI Framework)\r\n- Git + GitHub",
+    "resume_des": "Front-end: HTML, CSS, JavaScript, Bootstrap 5  \r\nBack-end: Python-Django\r\nDatabase: SQLite",
+    "image_path": "portfolio/img/project_images/Screenshot_2025-05-26_101846.png",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/my_portfolio",
+    "live_link": null,
+    "start_date": "2025-05-03",
+    "end_date": null,
+    "is_featured": true,
+    "user": 2,
+    "categories": [
+      2,
+      3,
+      5,
+      6,
+      17,
+      19
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 23,
+  "fields": {
+    "title": "Personal Assets Management System",
+    "tag_line": "Track assets, income, zakat, and taxes with a Django-based personal finance manager.",
+    "description": "💼 Project Name: Personal Assets Management System\r\n\r\n🔗 GitHub Repository:\r\nhttps://github.com/abdullah-md-jahid-hassan/Personal_assets_management\r\n\r\n🔗 Live On:\r\n(Not yet deployed)\r\n\r\n🔎 Overview:\r\nThis is a Django-powered financial management system for individuals to track income, assets, taxes, and zakat. It includes role-based access (admin/user) and allows document uploads to support each record. The system is tailored to Islamic finance principles, offering automatic zakat and tax calculations based on asset and income records.\r\n\r\n✨ Highlights:\r\n1. Tracks multiple income sources: salary, business, investment\r\n2. Records asset types: land, tangible (e.g. gold), and shares\r\n3. Calculates zakat based on nisab and zakatable assets\r\n4. Admin and user dashboards with data summaries\r\n5. Uploadable proof/documents for all entities\r\n6. Due date alerts for tax/zakat payments\r\n7. Fully built with Django, HTML/CSS, and MySQL\r\n\r\n🧰 Tools & Technologies:\r\n- Python (Django Framework)\r\n- MySQL (Database)\r\n- HTML5 & CSS3 (Frontend)\r\n- Git + GitHub",
+    "resume_des": "Front-end: HTML5, CSS3  \r\nBack-end: Python (Django)  \r\nDatabase: MySQL",
+    "image_path": "",
+    "github_link": "https://github.com/abdullah-md-jahid-hassan/Personal_assets_management",
+    "live_link": null,
+    "start_date": "2025-04-25",
+    "end_date": null,
+    "is_featured": true,
+    "user": 2,
+    "categories": [
+      2,
+      3,
+      5,
+      6,
+      15,
+      17
+    ]
+  }
+},
+{
+  "model": "landing_spot.project",
+  "pk": 24,
+  "fields": {
+    "title": "temp project",
+    "tag_line": "ddd",
+    "description": "ddcv",
+    "resume_des": null,
+    "image_path": "",
+    "github_link": null,
+    "live_link": null,
+    "start_date": null,
+    "end_date": null,
+    "is_featured": false,
+    "user": 1,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "landing_spot.service",
+  "pk": 1,
+  "fields": {
+    "title": "Backend Development",
+    "description": "✔ Custom Django web applications\r\n✔ RESTful API development & integration\r\n✔ Database design & optimization (MySQL, PostgreSQL)\r\n✔ Authentication systems (JWT, OAuth)",
+    "icon_class": "bi bi-gear-wide-connected",
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.service",
+  "pk": 2,
+  "fields": {
+    "title": "Full-Stack Solutions",
+    "description": "✔ Dynamic websites with Django + HTML/CSS/JS.\r\n✔ ISP/Enterprise management systems.\r\n✔ PHP-to-Django migration (legacy system upgrades)",
+    "icon_class": "bi bi-window-dock",
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.service",
+  "pk": 3,
+  "fields": {
+    "title": "IoT & Hardware-Software Integration",
+    "description": "✔ Arduino/Raspberry Pi-based prototypes\r\n✔ Sensor data processing (e.g., Li-Fi, RGB light systems)\r\n✔ Custom electronics-software interfacing",
+    "icon_class": "bi bi-motherboard",
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.service",
+  "pk": 4,
+  "fields": {
+    "title": "Technical Consultation",
+    "description": "✔ Li-Fi/optical communication concepts\r\n✔ Academic project guidance (thesis/research)\r\n✔ Debugging & performance optimization",
+    "icon_class": "bi bi-lightbulb",
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.service",
+  "pk": 5,
+  "fields": {
+    "title": "Freelance Support",
+    "description": "✔ Small business web solutions\r\n✔ Automation scripts (Python)\r\n✔ Technical documentation",
+    "icon_class": "bi bi-pc-display-horizontal",
+    "user": 2
+  }
+},
+{
+  "model": "landing_spot.certification",
+  "pk": 1,
+  "fields": {
+    "title": "Intern – Cyber Hundred",
+    "organization": "Cyber Hundred",
+    "certificate_image": "portfolio/img/certificate_images/Screenshot_2025-05-21_033154.png",
+    "user": 2,
+    "issue_date": "2024-06-05"
+  }
+},
+{
+  "model": "landing_spot.certification",
+  "pk": 2,
+  "fields": {
+    "title": "(BCSE) Bachelor of Computer Science and Engineering",
+    "organization": "IUBAT— International University of Business Agriculture and Technology",
+    "certificate_image": "portfolio/img/certificate_images/Screenshot_2025-05-21_033314.png",
+    "user": 2,
+    "issue_date": "2025-05-30"
+  }
+},
+{
+  "model": "landing_spot.education",
+  "pk": 2,
+  "fields": {
+    "degree": "(HSC) Higher Secondary Certificate",
+    "institution": "Dhaka Udyan Government College",
+    "institution_logo": "portfolio/img/education/institution_logo/images_1.png",
+    "department": "Science",
+    "department_logo": "portfolio/img/education/department_logo/82e7287b91acb66d6f024e07c98845b1.jpg",
+    "resume_achi": null,
+    "start_date": "2017-06-01",
+    "end_date": "2019-04-30",
+    "grade": "3.17",
+    "grade_standard": "5",
+    "user": 2,
+    "certificate": null
+  }
+},
+{
+  "model": "landing_spot.education",
+  "pk": 3,
+  "fields": {
+    "degree": "(SSC) Secondary School Certificate",
+    "institution": "Ibn Taymiyyah School and College",
+    "institution_logo": "portfolio/img/education/institution_logo/Ibn_Taimiya_School_and_College_logo.png",
+    "department": "Science",
+    "department_logo": "portfolio/img/education/department_logo/82e7287b91acb66d6f024e07c98845b1_RaqOaDR.jpg",
+    "resume_achi": null,
+    "start_date": "2014-01-01",
+    "end_date": "2017-04-30",
+    "grade": "4.68",
+    "grade_standard": "5",
+    "user": 2,
+    "certificate": null
+  }
+},
+{
+  "model": "landing_spot.education",
+  "pk": 4,
+  "fields": {
+    "degree": "(BCSE) Bachelor of Computer Science and Engineering",
+    "institution": "IUBAT— International University of Business Agriculture and Technology",
+    "institution_logo": "portfolio/img/education/institution_logo/Iubat-logo.png",
+    "department": "CSE – Computer Science & Engineering",
+    "department_logo": "portfolio/img/education/department_logo/images.jpg",
+    "resume_achi": "Thesis on \"Implementation of Parallel Data Transmission in Li-Fi Technology by Using RGB Light”.\r\nPracticum project “Development of Internet Service Provider System”.",
+    "start_date": "2020-05-20",
+    "end_date": "2024-06-30",
+    "grade": "3.59",
+    "grade_standard": "4",
+    "user": 2,
+    "certificate": 2
+  }
+},
+{
+  "model": "landing_spot.experience",
+  "pk": 2,
+  "fields": {
+    "name": "Internship",
+    "type": "on_site",
+    "institution": "Cyber Hundred",
+    "address": "Adapt F/K Complex, Kuratoli, Khilkhet, Dhaka",
+    "description": "Intern – Cyber Hundred\r\nUttara, Dhaka, Bangladesh · On-siteUttara, Dhaka, Bangladesh\r\n\r\nFeb 2024 - Jul 2024 · 6 mosFeb 2024 to Jul 2024 · 6 months\r\n\r\nI have worked on two projects in documented several projects.\r\n\r\nSkill Useds: Bootstrap (Framework) · PHP · CSS Sprites · MySQL · PhpMyAdmin · Project Management · Project Planning · Product Development · Programming · Team Management · HTML5 · Teamwork · GitHub · Git · Software Development",
+    "resume_des": "Contributed to the planning, development, and documentation of multiple web projects\r\nWorked with core technologies including PHP, MySQL, HTML5, CSS (sprites), and Bootstrap\r\nCollaborated using Git and GitHub for version control and teamwork\r\nParticipated in project management, product development, and team coordination\r\nGained hands-on experience in the software development lifecycle\r\nDeveloped strong skills in project planning and team-based collaboration",
+    "start_date": "2024-02-01",
+    "end_date": "2024-07-30",
+    "user": 2,
+    "certificate": 1
+  }
+},
+{
+  "model": "resume.resume",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "name": "General Porous",
+    "is_active": true,
+    "summary": "Motivated and detail-oriented Computer Science Engineering graduate with a strong foundation in software development. Proficient in C, C++, Java, C#, and PHP, with hands-on experience in full-stack development through an ISP system project using HTML, CSS, Bootstrap, PHP, and MySQL. Currently enhancing skills in Python and Django by working on real-world projects. A fast learner with a problem-solving mindset, highly organized, and eager to contribute technical expertise in a dynamic work environment."
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 1,
+  "fields": {
+    "resume": 1,
+    "project": 1,
+    "hierarchy": 48
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 2,
+  "fields": {
+    "resume": 1,
+    "project": 6,
+    "hierarchy": 47
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 3,
+  "fields": {
+    "resume": 1,
+    "project": 22,
+    "hierarchy": 50
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 4,
+  "fields": {
+    "resume": 1,
+    "project": 23,
+    "hierarchy": 49
+  }
+}
+]

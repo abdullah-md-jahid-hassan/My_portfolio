@@ -59,22 +59,22 @@ class Restricted_if_not_supper:
     
     # Allow user to delete their own profile only.
     # Superusers can delete any record.
-def has_delete_permission(self, request, obj=None):
-    # Superusers have full permissions
-    if request.user.is_superuser:
-        return True
-        
-    if request.user.groups.filter(name='General Users').exists():
-        if obj is None:
-            return False  # Disable bulk deletion
+    def has_delete_permission(self, request, obj=None):
+        # Superusers have full permissions
+        if request.user.is_superuser:
+            return True
             
-        # Check model type once
-        is_user_model = obj._meta.model_name == 'user'
+        if request.user.groups.filter(name='General Users').exists():
+            if obj is None:
+                return False  # Disable bulk deletion
+                
+            # Check model type once
+            is_user_model = obj._meta.model_name == 'user'
+            
+            if is_user_model:
+                return False  # Or obj.pk == request.user.pk if allowing self-deletion
+            else:
+                return obj.user == request.user
         
-        if is_user_model:
-            return False  # Or obj.pk == request.user.pk if allowing self-deletion
-        else:
-            return obj.user == request.user
-    
-    return True
+        return True
     

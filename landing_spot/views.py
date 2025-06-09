@@ -1,10 +1,10 @@
 # File: Landing_spot/views.py
 
-from django.shortcuts import render, redirect # Import render for rendering templates
+from django.shortcuts import render, redirect, get_object_or_404 # Import render for rendering templates
 from django.http import HttpResponse # Import HttpResponse for returning responses
 from django.template import loader # Import loader for rendering templates
 from django.db.models import Count, Prefetch # Import Count for aggregating data, Prefetch for optimizing queries
-from .models import User, ProjectCategory, SkillCategory, Skill, Contact # Import necessary models
+from .models import User, ProjectCategory, SkillCategory, Skill, Contact, Project # Import necessary models
 from django.contrib import messages # Import messages for user feedback
 from .forms import ContactForm # Import the ContactForm for handling contact messages
 
@@ -98,11 +98,11 @@ def other_portfolio(request, username):
 
 
 # Save contact form submission
-def save_contact_message(request):
+def save_contact_message(request, username):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            person = User.objects.get(id=1)
+            person = User.objects.get(username=username)
             Contact.objects.create(
                 name=form.cleaned_data['name'],
                 email=form.cleaned_data['email'],
@@ -114,4 +114,24 @@ def save_contact_message(request):
         else:
             messages.error(request, "Please correct the errors in the form.")
     
-    return redirect('/#contact')
+    return redirect(f'/portfolio/{username}#contact')
+
+
+
+
+# view function for project details
+def Project_Details(request, username, slug):
+    # Get the project by slug and username
+    project = get_object_or_404(Project, slug=slug, user__username=username)
+    project.user_phone = project.user.phone
+    project.user_email = project.user.email
+    root_url = request.build_absolute_uri('/')
+    previous_page = request.META.get('HTTP_REFERER', '/')
+    
+    context = {
+        'project': project,
+        'username': username,
+        'previous_page': previous_page,
+        }
+    
+    return render(request, 'project_details.html', context)

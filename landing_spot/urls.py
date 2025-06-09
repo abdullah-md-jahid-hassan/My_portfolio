@@ -12,7 +12,10 @@ urlpatterns = [
     path('portfolio/<str:username>', views.other_portfolio, name='landing_page'),
     
     # URL pattern for saving contact messages
-    path('save-contact-message/', views.save_contact_message, name='save_contact_message'),
+    path('save_contact_message/<str:username>', views.save_contact_message, name='save_contact_message'),
+    
+    # URL pattern for project details
+    path('project/<str:username>/<str:slug>', views.Project_Details, name='Project_Details'),
 ]
 
 

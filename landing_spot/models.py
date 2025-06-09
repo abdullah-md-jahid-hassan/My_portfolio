@@ -3,9 +3,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
-
-# Importing necessary functions for custom ordering
-from django.db.models import Case, When, Value, IntegerField
+from django.utils.text import slugify
 
 # Imported functions
 # To find the duration.
@@ -145,6 +143,7 @@ class Project(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255, null=True, blank=False)
     tag_line = models.CharField(max_length=255, null=True, blank=True)
+    slug = models.SlugField(max_length=300, unique=True, null=True, blank=True)
     categories = models.ManyToManyField(ProjectCategory)
     description = models.TextField(null=True, blank=True)
     resume_des = models.TextField(null=True, blank=True)
@@ -155,7 +154,27 @@ class Project(models.Model):
     end_date = models.DateField(null=True, blank=True)
     is_featured = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='projects')
+    
+    
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            base_slug = slugify(self.title)
+            slug = base_slug
+            counter = 1
+
+            while Project.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+
+            self.slug = slug
+
+        super().save(*args, **kwargs)
+
+        
+
+
+    all_objects = models.Manager()  # Default manager
     objects = CustomProjectOrder() # Custom ordering
 
     def __str__(self):
