@@ -74,7 +74,14 @@
           </div>
 
           <div class="project-description col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="{{project.image_path.url}}" alt="" class="img-fluid projects-img">
+            <img src="
+                    {% if project.image_path %}
+                      {{ project.image_path.url }}
+                    {% else %}
+                      {% static "portfolio/img/project/project_default_img.jpg" %}
+                    {% endif %}
+                  " alt="Project image" class="img-fluid projects-img">
+
             <h3>{{project.title}}</h3>
             <h4>{{project.tag_line}}</h4>
             <p>{{project.description|linebreaksbr}}</p>
