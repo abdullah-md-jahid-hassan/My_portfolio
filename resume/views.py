@@ -6,7 +6,6 @@ from weasyprint import HTML
 from django.template.loader import render_to_string
 from django.db.models import Prefetch
 from landing_spot.models import User, Skill, SkillCategory, Project
-from resume.models import Resume, ResumeProject
 
 
 def pdf_resume_view(request, username, action):
@@ -60,3 +59,4 @@ def pdf_resume_view(request, username, action):
         return HttpResponse("Invalid action.", status=400)
 
     return response
+
