@@ -171,10 +171,7 @@ class Project(models.Model):
 
         super().save(*args, **kwargs)
 
-        
-
-
-    all_objects = models.Manager()  # Default manager
+    # Custom manager for ordering projects based on custom criteria.
     objects = CustomProjectOrder() # Custom ordering
 
     def __str__(self):
