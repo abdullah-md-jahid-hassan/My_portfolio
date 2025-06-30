@@ -8,7 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     :root {
-      --theme-color: #00366d
+      --theme-color: #00366d;
+      --name-font-size: 22px;
+      --info-font-size: 13px;
+      --section-title-font-size: 16px;
+      --normal-font-size: 12px;
+      --small-font-size: 11px;
+
     }
   @page {
     size: A4;
@@ -22,45 +28,65 @@
     background: #fff;
     color: #000;
   }
+
+
     .header {
       display: flex;
       align-items: center;
       padding-bottom: 10px;
     }
+
+
     .header img {
       width: 100px;
       height: auto;
       margin-right: 20px;
     }
-    .header .info {
-      font-size: 14px;
-    }
+
+
     .header .info h1 {
       margin: 0;
-      font-size: 22px;
+      font-size: var(--name-font-size);
       text-transform: uppercase;
       color: var(--theme-color);
     }
-    .header .info a {
+
+
+    .header .info {
+      font-size: var(--info-font-size);
+    }
+
+
+    a {
       text-decoration: none;
       color: #000;
     }
-    .summary{
-      text-align: justify;
-    }
+
+
     .section {
       margin-top: 20px;
+      text-align: justify;
+      page-break-inside: avoid;
     }
+
+
     .section h2 {
-      font-size: 16px;
+      font-size: var(--section-title-font-size);
       color: var(--theme-color);
       text-transform: uppercase;
       border-bottom: 1px solid var(--theme-color);
       margin-bottom: 10px;
     }
+
+
+    .section p {
+        font-size: var(--normal-font-size);
+    }
+
+
     ul {
       margin: 0;
-      font-size: 14px;
+      font-size: var(--normal-font-size);
       padding-left: 20px;
     }
 
@@ -71,38 +97,57 @@
     .project-item, .work-item {
       margin-bottom: 10px;
     }
+
+
     .date {
       position: relative;
       top: 0px;
       float: right;
-      font-size: 13px;
+      font-size: var(--small-font-size);
       color: #555;
     }
+
+
     .type {
       position: relative;
       top: 0px;
       float: right;
-      font-size: 13px;
+      font-size: var(--small-font-size);
       color: #555;
     }
+
+
     .address {
-      font-size: 13px;
+      font-size: var(--small-font-size);
       color: #555;
     }
+
+
+    .project-item p {
+      font-size: 10px;
+      color: #555;
+      margin: 0px;
+    }
+
+
     .work-item ul{
       margin-top: 10px;
     }
+
+
     .work-item{
       margin-bottom: 30px;
     }
+
 
     .education-item {
       margin-bottom: 20px;
     }
 
+
     .education-item .institution {
       margin-top: 5px;
-      font-size: 14px;
+      font-size: 11px;
     }
 
 
@@ -110,15 +155,15 @@
 </head>
 <body>
   <div class="header">
-    <img src="{{person.profile_image.url}}" alt="{{person.first_name}} {{person.last_name}}'s Profile Image">
+    <img src="file://{{person.image_path}}" alt="{{person.first_name}} {{person.last_name}}'s Profile Image">
     <div class="info">
       <h1>{{person.first_name}} {{person.last_name}}</h1>
       <p><strong>Address:</strong> {{person.area}}, {{person.city}}, {{person.country}}<br>
       <strong>Phone:</strong> {{person.phone}}<br>
       <strong>Email:</strong> {{person.email}}<br>
       <strong>LinkedIn:</strong> <a href="{{person.linkedin}}">{{person.linkedin}}</a><br>
-      <strong>LinkedIn:</strong> <a href="{{person.github}}">{{person.github}}</a><br>
-      <strong>GitHub:</strong> <a href="{{person.portfolio}}">{{person.portfolio}}</a></p>
+      <strong>GitHub:</strong> <a href="{{person.github}}">{{person.github}}</a><br>
+      <strong>Portfolio:</strong> <a href="{{person.portfolio}}">{{person.portfolio}}</a></p>
     </div>
   </div>
 
@@ -130,11 +175,12 @@
     <p class="summary">{{resume.summary}}</p>
   </div>
 
+
   <div class="section">
     <h2>SKILLS</h2>
     <ul>
       {% for category in skill_categories %}
-        <li><strong>{{category.name}}:</strong> 
+        <li><strong>{{category.name}}:</strong>
           {% for skill in category.skills.all %}
             {{skill.name}}{% if not forloop.last %}, {% endif %}
           {% endfor %}
@@ -151,6 +197,14 @@
     {% for project in projects %}
       <div class="project-item">
         <strong>{{project.title}}</strong>
+        <div class="linka">
+            {% if project.github_link %}
+                <p>Github: {{project.github_link}}</p>
+            {% endif %}
+            {% if project.live_link %}
+                <p>Live On: {{project.live_link}}</p>
+            {% endif %}
+        </div>
         <ul>
           {% for line in project.resume_des.splitlines %}
               {% if line %}
@@ -209,13 +263,6 @@
     {% endfor %}
   </div>
 
-
-
-
-  <div class="section">
-    <h2>SUMMARY</h2>
-    <p>{{resume.summary}}</p>
-  </div>
 
   <div class="section">
     <h2>Additional Information</h2>
