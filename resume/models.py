@@ -16,6 +16,14 @@ class Resume(models.Model):
     summary = models.TextField(null=True, blank=True)
     # is_watermark = models.BooleanField(default=False)
 
+    def save(self, *args, **kwargs):
+        if self.is_active:
+            # Set is_active=False for all other records of the same user
+            Resume.objects.filter(user=self.user, is_active=True).exclude(pk=self.pk).update(is_active=False)
+        super().save(*args, **kwargs)
+        
+        
+
 class ResumeProject(models.Model):
     resume = models.ForeignKey(Resume, on_delete=models.CASCADE, related_name='resume_projects')
     project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='resume_projects')
