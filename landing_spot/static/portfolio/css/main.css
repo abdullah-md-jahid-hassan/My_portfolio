@@ -777,6 +777,10 @@ section,
   background-color: var(--accent-color);
 }
 
+.certifications .rounded-certificate img {
+  max-height: 70vh;
+}
+
 @media (min-width: 992px) {
   .certifications .certification-item p {
     width: 80%;

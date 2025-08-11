@@ -24,8 +24,8 @@ def pdf_resume_view(request, username, action):
     
     # Resume projects
     projects = Project.objects.filter(
-        resume_projects__resume=resume
-    ).order_by('-resume_projects__hierarchy')
+        resume_project__resume=resume
+    ).order_by('-resume_project__hierarchy')
 
     # Experiences and education
     experiences = person.experiences.all()
@@ -46,7 +46,11 @@ def pdf_resume_view(request, username, action):
 
     # Generate PDF using WeasyPrint
     # pdf_file = HTML(string=html_string).write_pdf()
-    pdf_file = HTML(string=html_string, base_url=request.build_absolute_uri()).write_pdf()
+    pdf_file = HTML(
+        string=html_string,
+        base_url=request.build_absolute_uri('/')  # Root URL so media/static paths work
+    ).write_pdf()
+
 
     # Set the correct response type
     if action == 'download':

@@ -1,0 +1,1436 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "projectcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "skillcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "certification"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "contact"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "education"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "experience"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "project"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "service"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "landing_spot",
+    "model": "skill"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "resume",
+    "model": "resume"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "resume",
+    "model": "resumeproject"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a3m1gkk9kmrs7qsynw6olml76xhacykv",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO1tndxADlSnFSIu0OkFNC-mXkvlmBbW9oGLmmq7MwkO_1uGcoD-w7qHfpt5mXu6zJlviv8oINf54rPy-H-HTQY7Vs7F4mKE0JGrUmXmJUQGgiCUKQVmiCttBRqMWANIlgQPqAx5KPKHtn7A9EbN6M:1uN3rx:vqu4cBtHMFNN29RxY1lXYx6r7Ne8It2b_oQqXkek3YI",
+    "expire_date": "2025-06-19T06:14:29.240Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ty2he6i402muhvjs05z6v61sm73ce84e",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO1tndxADlSnFSIu0OkFNC-mXkvlmBbW9oGLmmq7MwkO_1uGcoD-w7qHfpt5mXu6zJlviv8oINf54rPy-H-HTQY7Vs7F4mKE0JGrUmXmJUQGgiCUKQVmiCttBRqMWANIlgQPqAx5KPKHtn7A9EbN6M:1uPwEp:JXcoKEzFRRGSaoFmH5eYkcavL2VfZfB71YlkPa1R3S8",
+    "expire_date": "2025-06-27T04:41:59.458Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xce1fjpku9bo75nmdnfwmxher36bgwbk",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAChaEu3XsGMsMwUjVtUtqV8e7apAvd_vfef6mE21rT1sqSRlZnZdXpdyPMjzLtgO843Wad52ldRtK7og_a9HXm8rwc7t9BxVa_tbO9GZCwB7RGOiMEbkAk8Dl7B6F4JxJ7X2LMbJ0QSRCAAMwcukDq_QHpczht:1uMW5G:F4JvBZod8N7E47PwuuAwKQx0uqlQP7d1tAT4RE6QB8g",
+    "expire_date": "2025-06-17T18:09:58.249Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ykn3czdb6u00xhqax8qir1cc577x67qa",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO1tndxADlSnFSIu0OkFNC-mXkvlmBbW9oGLmmq7MwkO_1uGcoD-w7qHfpt5mXu6zJlviv8oINf54rPy-H-HTQY7Vs7F4mKE0JGrUmXmJUQGgiCUKQVmiCttBRqMWANIlgQPqAx5KPKHtn7A9EbN6M:1uOIFZ:-sTFIN4FJ9GLWv9xf-gB-k3c60dAKia_8Ks_BpLOVT8",
+    "expire_date": "2025-06-22T15:47:57.874Z"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 10,
+  "fields": {
+    "name": "Frontend Development",
+    "slug": "frontend-development"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 11,
+  "fields": {
+    "name": "Backend Development",
+    "slug": "backend-development"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 12,
+  "fields": {
+    "name": "Database",
+    "slug": "database"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 13,
+  "fields": {
+    "name": "Version Control",
+    "slug": "version-control"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 14,
+  "fields": {
+    "name": "Hardware & Embedded Systems",
+    "slug": "hardware-embedded-systems"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 15,
+  "fields": {
+    "name": "Networking",
+    "slug": "networking"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 16,
+  "fields": {
+    "name": "Tools",
+    "slug": "tools"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 17,
+  "fields": {
+    "name": "Soft Skills",
+    "slug": "soft-skills"
+  }
+},
+{
+  "model": "landing_spot.skillcategory",
+  "pk": 18,
+  "fields": {
+    "name": "Programing Languages",
+    "slug": "programing-languages"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 1,
+  "fields": {
+    "name": "PHP",
+    "slug": "php"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Python-Django",
+    "slug": "python-django"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 4,
+  "fields": {
+    "name": "C++",
+    "slug": "c++"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 5,
+  "fields": {
+    "name": "JavaScript",
+    "slug": "javascript"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 6,
+  "fields": {
+    "name": "HTML/CSS",
+    "slug": "html/css"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 7,
+  "fields": {
+    "name": "C#",
+    "slug": "csharp"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 8,
+  "fields": {
+    "name": "React",
+    "slug": "react"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 9,
+  "fields": {
+    "name": "Node",
+    "slug": "node"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 10,
+  "fields": {
+    "name": "Flutter",
+    "slug": "flutter"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 11,
+  "fields": {
+    "name": "JAVA",
+    "slug": "java"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 12,
+  "fields": {
+    "name": "Electronics",
+    "slug": "electronics"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 13,
+  "fields": {
+    "name": "Arduino",
+    "slug": "arduino"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 14,
+  "fields": {
+    "name": "Academic",
+    "slug": "academic"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 15,
+  "fields": {
+    "name": "MySQL",
+    "slug": "mysql"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 16,
+  "fields": {
+    "name": "Other",
+    "slug": "other"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 17,
+  "fields": {
+    "name": "Bootstrap",
+    "slug": "bootstrap"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 18,
+  "fields": {
+    "name": "ESP-866",
+    "slug": "esp-866"
+  }
+},
+{
+  "model": "landing_spot.projectcategory",
+  "pk": 19,
+  "fields": {
+    "name": "SQL lite",
+    "slug": "sql-lite"
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 1,
+  "fields": {
+    "resume": 1,
+    "project": 1,
+    "hierarchy": 48
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 2,
+  "fields": {
+    "resume": 1,
+    "project": 6,
+    "hierarchy": 47
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 3,
+  "fields": {
+    "resume": 1,
+    "project": 22,
+    "hierarchy": 50
+  }
+},
+{
+  "model": "resume.resumeproject",
+  "pk": 4,
+  "fields": {
+    "resume": 1,
+    "project": 23,
+    "hierarchy": 49
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Project Category",
+    "content_type": [
+      "landing_spot",
+      "projectcategory"
+    ],
+    "codename": "add_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Project Category",
+    "content_type": [
+      "landing_spot",
+      "projectcategory"
+    ],
+    "codename": "change_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Project Category",
+    "content_type": [
+      "landing_spot",
+      "projectcategory"
+    ],
+    "codename": "delete_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Project Category",
+    "content_type": [
+      "landing_spot",
+      "projectcategory"
+    ],
+    "codename": "view_projectcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Skill Category",
+    "content_type": [
+      "landing_spot",
+      "skillcategory"
+    ],
+    "codename": "add_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Skill Category",
+    "content_type": [
+      "landing_spot",
+      "skillcategory"
+    ],
+    "codename": "change_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Skill Category",
+    "content_type": [
+      "landing_spot",
+      "skillcategory"
+    ],
+    "codename": "delete_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Skill Category",
+    "content_type": [
+      "landing_spot",
+      "skillcategory"
+    ],
+    "codename": "view_skillcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add User Profile",
+    "content_type": [
+      "landing_spot",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change User Profile",
+    "content_type": [
+      "landing_spot",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete User Profile",
+    "content_type": [
+      "landing_spot",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view User Profile",
+    "content_type": [
+      "landing_spot",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Certification",
+    "content_type": [
+      "landing_spot",
+      "certification"
+    ],
+    "codename": "add_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Certification",
+    "content_type": [
+      "landing_spot",
+      "certification"
+    ],
+    "codename": "change_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Certification",
+    "content_type": [
+      "landing_spot",
+      "certification"
+    ],
+    "codename": "delete_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Certification",
+    "content_type": [
+      "landing_spot",
+      "certification"
+    ],
+    "codename": "view_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Contact Message",
+    "content_type": [
+      "landing_spot",
+      "contact"
+    ],
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Contact Message",
+    "content_type": [
+      "landing_spot",
+      "contact"
+    ],
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Contact Message",
+    "content_type": [
+      "landing_spot",
+      "contact"
+    ],
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Contact Message",
+    "content_type": [
+      "landing_spot",
+      "contact"
+    ],
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Education",
+    "content_type": [
+      "landing_spot",
+      "education"
+    ],
+    "codename": "add_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Education",
+    "content_type": [
+      "landing_spot",
+      "education"
+    ],
+    "codename": "change_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Education",
+    "content_type": [
+      "landing_spot",
+      "education"
+    ],
+    "codename": "delete_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Education",
+    "content_type": [
+      "landing_spot",
+      "education"
+    ],
+    "codename": "view_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Experience",
+    "content_type": [
+      "landing_spot",
+      "experience"
+    ],
+    "codename": "add_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Experience",
+    "content_type": [
+      "landing_spot",
+      "experience"
+    ],
+    "codename": "change_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Experience",
+    "content_type": [
+      "landing_spot",
+      "experience"
+    ],
+    "codename": "delete_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Experience",
+    "content_type": [
+      "landing_spot",
+      "experience"
+    ],
+    "codename": "view_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Project",
+    "content_type": [
+      "landing_spot",
+      "project"
+    ],
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Project",
+    "content_type": [
+      "landing_spot",
+      "project"
+    ],
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Project",
+    "content_type": [
+      "landing_spot",
+      "project"
+    ],
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Project",
+    "content_type": [
+      "landing_spot",
+      "project"
+    ],
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Service",
+    "content_type": [
+      "landing_spot",
+      "service"
+    ],
+    "codename": "add_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Service",
+    "content_type": [
+      "landing_spot",
+      "service"
+    ],
+    "codename": "change_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Service",
+    "content_type": [
+      "landing_spot",
+      "service"
+    ],
+    "codename": "delete_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Service",
+    "content_type": [
+      "landing_spot",
+      "service"
+    ],
+    "codename": "view_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Skill",
+    "content_type": [
+      "landing_spot",
+      "skill"
+    ],
+    "codename": "add_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Skill",
+    "content_type": [
+      "landing_spot",
+      "skill"
+    ],
+    "codename": "change_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Skill",
+    "content_type": [
+      "landing_spot",
+      "skill"
+    ],
+    "codename": "delete_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Skill",
+    "content_type": [
+      "landing_spot",
+      "skill"
+    ],
+    "codename": "view_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add resume",
+    "content_type": [
+      "resume",
+      "resume"
+    ],
+    "codename": "add_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change resume",
+    "content_type": [
+      "resume",
+      "resume"
+    ],
+    "codename": "change_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete resume",
+    "content_type": [
+      "resume",
+      "resume"
+    ],
+    "codename": "delete_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view resume",
+    "content_type": [
+      "resume",
+      "resume"
+    ],
+    "codename": "view_resume"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add resume project",
+    "content_type": [
+      "resume",
+      "resumeproject"
+    ],
+    "codename": "add_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change resume project",
+    "content_type": [
+      "resume",
+      "resumeproject"
+    ],
+    "codename": "change_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete resume project",
+    "content_type": [
+      "resume",
+      "resumeproject"
+    ],
+    "codename": "delete_resumeproject"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view resume project",
+    "content_type": [
+      "resume",
+      "resumeproject"
+    ],
+    "codename": "view_resumeproject"
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "General Users",
+    "permissions": [
+      [
+        "add_certification",
+        "landing_spot",
+        "certification"
+      ],
+      [
+        "change_certification",
+        "landing_spot",
+        "certification"
+      ],
+      [
+        "delete_certification",
+        "landing_spot",
+        "certification"
+      ],
+      [
+        "view_certification",
+        "landing_spot",
+        "certification"
+      ],
+      [
+        "add_contact",
+        "landing_spot",
+        "contact"
+      ],
+      [
+        "change_contact",
+        "landing_spot",
+        "contact"
+      ],
+      [
+        "delete_contact",
+        "landing_spot",
+        "contact"
+      ],
+      [
+        "view_contact",
+        "landing_spot",
+        "contact"
+      ],
+      [
+        "add_education",
+        "landing_spot",
+        "education"
+      ],
+      [
+        "change_education",
+        "landing_spot",
+        "education"
+      ],
+      [
+        "delete_education",
+        "landing_spot",
+        "education"
+      ],
+      [
+        "view_education",
+        "landing_spot",
+        "education"
+      ],
+      [
+        "add_experience",
+        "landing_spot",
+        "experience"
+      ],
+      [
+        "change_experience",
+        "landing_spot",
+        "experience"
+      ],
+      [
+        "delete_experience",
+        "landing_spot",
+        "experience"
+      ],
+      [
+        "view_experience",
+        "landing_spot",
+        "experience"
+      ],
+      [
+        "add_project",
+        "landing_spot",
+        "project"
+      ],
+      [
+        "change_project",
+        "landing_spot",
+        "project"
+      ],
+      [
+        "delete_project",
+        "landing_spot",
+        "project"
+      ],
+      [
+        "view_project",
+        "landing_spot",
+        "project"
+      ],
+      [
+        "add_projectcategory",
+        "landing_spot",
+        "projectcategory"
+      ],
+      [
+        "view_projectcategory",
+        "landing_spot",
+        "projectcategory"
+      ],
+      [
+        "add_service",
+        "landing_spot",
+        "service"
+      ],
+      [
+        "change_service",
+        "landing_spot",
+        "service"
+      ],
+      [
+        "delete_service",
+        "landing_spot",
+        "service"
+      ],
+      [
+        "view_service",
+        "landing_spot",
+        "service"
+      ],
+      [
+        "add_skill",
+        "landing_spot",
+        "skill"
+      ],
+      [
+        "change_skill",
+        "landing_spot",
+        "skill"
+      ],
+      [
+        "delete_skill",
+        "landing_spot",
+        "skill"
+      ],
+      [
+        "view_skill",
+        "landing_spot",
+        "skill"
+      ],
+      [
+        "add_skillcategory",
+        "landing_spot",
+        "skillcategory"
+      ],
+      [
+        "view_skillcategory",
+        "landing_spot",
+        "skillcategory"
+      ],
+      [
+        "add_user",
+        "landing_spot",
+        "user"
+      ],
+      [
+        "change_user",
+        "landing_spot",
+        "user"
+      ],
+      [
+        "view_user",
+        "landing_spot",
+        "user"
+      ],
+      [
+        "add_resume",
+        "resume",
+        "resume"
+      ],
+      [
+        "change_resume",
+        "resume",
+        "resume"
+      ],
+      [
+        "delete_resume",
+        "resume",
+        "resume"
+      ],
+      [
+        "view_resume",
+        "resume",
+        "resume"
+      ],
+      [
+        "add_resumeproject",
+        "resume",
+        "resumeproject"
+      ],
+      [
+        "change_resumeproject",
+        "resume",
+        "resumeproject"
+      ],
+      [
+        "delete_resumeproject",
+        "resume",
+        "resumeproject"
+      ],
+      [
+        "view_resumeproject",
+        "resume",
+        "resumeproject"
+      ]
+    ]
+  }
+},
+{
+  "model": "landing_spot.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ps2rfhpN8ynNIoCApoS6O9$R9BILFMBeTNksnsPZH02VGrbuY+HVYhRCydXt30ecCc=",
+    "last_login": "2025-06-13T04:41:59.449Z",
+    "is_superuser": true,
+    "username": "i_am_the_boss_here",
+    "first_name": "Supper",
+    "last_name": "User",
+    "email": "the_boss@portfolio.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-03T11:16:24.539Z",
+    "tag_line": "I'm The Boss Here",
+    "phone": "000000000",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "area": "Uttara 10",
+    "location_link": null,
+    "about": "",
+    "github": null,
+    "linkedin": null,
+    "portfolio": null,
+    "static_resume_file": "",
+    "banner_image": "portfolio/img/person/banner_images/Screenshot_2025-03-20_222913.png",
+    "profile_image": "portfolio/img/person/profile_images/Screenshot_2025-03-20_222913.png",
+    "hobbies": "",
+    "language": null,
+    "meta_description": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "landing_spot.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$crlZZLwiptIa5qsh3UyDp2$GOMlMbSwH8RoH8OJxOdZBitM0N/idADE0HDTPGqp8dw=",
+    "last_login": "2025-06-05T06:13:38.440Z",
+    "is_superuser": false,
+    "username": "Abdullah_Md_Jahid_Hassan",
+    "first_name": "Abdullah Md",
+    "last_name": "Jahid Hassan",
+    "email": "abdullahmdjahidhassan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-03T14:13:27Z",
+    "tag_line": "Backend Developer | Web Developer | CSE Graduate",
+    "phone": "+8801756254873",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "area": "Uttara 10",
+    "location_link": "https://maps.app.goo.gl/TYADuQCwJoLGSdFR7",
+    "about": 

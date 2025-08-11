@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'resume',
     
     # Apps for Development
-    "django_browser_reload",
 ]
 
 MIDDLEWARE = [

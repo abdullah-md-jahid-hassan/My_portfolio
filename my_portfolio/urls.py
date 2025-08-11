@@ -25,9 +25,6 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    # URL for live reloading during development
-    path("__reload__/", include("django_browser_reload.urls")),
-    
     # Admin interface for managing the portfolio
     path('control/', admin.site.urls),
     
